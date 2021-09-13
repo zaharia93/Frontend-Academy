@@ -12,14 +12,15 @@
   // }
   
   .cards {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
     padding: 15px;
-    max-width: 1280px;
+    max-width: 1270px;
     display: flex;
-   margin-left: 15vh;
+   margin-left: 18vh;
    margin-top: 25px;
    background: #262a32;
     
@@ -30,7 +31,9 @@
     color: #ffffff;
     font-size: 25px;
   }
-  
+  .shows{
+    display: none;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -46,6 +49,7 @@
     text-decoration: none;
     font-size: 1rem;
     transition: all 200ms ease-in-out;
+    // display: none;
   
     &:hover {
       transform: translateY(-1rem);

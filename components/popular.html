@@ -2,7 +2,7 @@
 <section class="cards">
 
   <div class="title"><h1>Popular items</h1></div>
-
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
       <div class="card__content">
@@ -11,7 +11,9 @@
         <div class="card__readmore">$ 799.55</div>
       </div>
     </a>
+  </div>
 
+  <div class="shows"></div>
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
       <div class="card__content">
@@ -21,6 +23,7 @@
       </div>
     </a>
 
+    <div class="shows"></div>
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/check.png')"></div>
       <div class="card__content">
@@ -29,7 +32,9 @@
         <div class="card__readmore">$129.55</div>
       </div>
     </a>
+  </div>
 
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
       <div class="card__content">
@@ -38,7 +43,9 @@
         <div class="card__readmore">$299.88</div>
       </div>
     </a>
+  </div>
 
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -46,7 +53,9 @@
         
         <div class="card__readmore">Read More</div>
       </div>
-    </a>
+    </a></div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
       <div class="card__content">
@@ -55,6 +64,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -63,6 +75,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -71,6 +86,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -79,6 +97,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -87,6 +108,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -95,6 +119,9 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
+
+    <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/chair.png')"></div>
       <div class="card__content">
@@ -103,8 +130,21 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+  </div>
     <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
   </section>
 
   
+<script type="text/javascript">
+  $(".shows").slice(0, 8).show(); //showing 8 div
   
+  $(".loadMore").on("click",function(){
+    $(".card:hidden").slice(0, 4).show(); //showing 4 hidden div on click
+  
+    if($(".shows:hidden").length ==0)
+    {
+      $(".loadMore").fadeOut(); //this will hide
+      //button when length is 0
+    }
+  })
+</script>
