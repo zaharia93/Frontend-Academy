@@ -8,30 +8,561 @@
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     
   </head>
   <body>
     
-    <div id="demo"></div>
-    <div id="carus"></div>
-    <div id="popular"></div>
-    <script src= "index.js"></script>
-    <script src="js/carusel.js"></script>
-    <!-- <script src="js/popular.js"></script> -->
     
 
+<!--Navbar-->
+<nav>
+  <div class="wrapper">
+     <div class = "logo-top">
+      <img class = "img-logo" src="public/logo.png" alt="">
+      <div class = "logo">
+           <div class="logo1"><a href="#">OSF</a></div>
+          <div class="logo2"><a href="#">Academy</a></div>
+      </div>
+  </div>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li>
+        <a href="#" class="itema">SERVICES</a>
+        <input type="checkbox" id="showMega">
+        <label for="showMega" class="mobile-item"></label>
+        <div class="mega-box">
+          <div class="content">
 
+            <div class="row">
+              <header>Product Categories</header>
+              <ul class="mega-links">
+                <li><a href="">Accesories</a></li>
+                <li><a href="#">Alcohol</a></li>
+                <li><a href="#">art</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Drink</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Flowers & Plants</a></li>
+                <li><a href="#">Food</a></li>
+                
+                
+              </ul>
+            </div>
+            <div class="row">
+              <ul class="mega-links">
+                  <header> . </header>
+                  <li><a href="#">Gadgets</a></li>
+                <li><a href="#">Garden</a></li>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Kids & Baby</a></li>
+                <li><a href="#">Men's Fashion</a></li>
+                <li><a href="#">Mobile</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <ul class="mega-links">
+                  <header> .</header>
+                  <li><a href="#">Motorcycle</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Toys</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <ul class="mega-links">
+              <header>Sale</header>
+                  <li><a href="#">Accesories</a></li>
+                  <li><a href="#">Alcohol</a></li>
+                  <li><a href="#">art</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Drink</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Flowers & Plants</a></li>
+                  <li><a href="#">Food</a></li>
+              </ul>
+            </div>
+             <img class = "img-cast" src="public/cast.png" alt="">
+          </div>
+        </div>
+      </li>
+      <li><a href="#" >COMPANY</a></li>
+      <li><a href="#">LIBRARY</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a class = "grey" href="#">EN</a></li>
+      <li><a class = "grey" href="#">$US</a></li>
+      <li><a class = "grey" href="#"><i class="fas fa-search"></i></a></li>
+      <li><a class = "grey" href="#"><i class="far fa-user"></i></a></li>
+      <li><a class = "grey" href="#"><i class="far fa-heart"></i></a></li>
+      <li><a class = "grey" href="#"><i class="fas fa-shopping-bag"></i></a></li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
+</nav>
+
+<!--Carousel-->
+<div class = "top-carusel">
+  <div class="img-slider">
+    <div class="slide active">
+      <img src="public/carusel.png" alt="">
+      <div class="info">
+        <h2>Control and manage any device with cloud solutions</h2>
+        <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
+        <div class="btns">
+            <a class = "search" href="#">VIEW MORE<i class="fas fa-search"></i></a>
+         </div>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="public/carusel.png" alt="">
+      <div class="info">
+        <h2>Slide 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="public/carusel.png" alt="">
+      <div class="info">
+        <h2>Slide 03</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="public/carusel.png" alt="">
+      <div class="info">
+        <h2>Slide 04</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="public/carusel.png" alt="">
+      <div class="info">
+        <h2>Slide 05</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="slide-dot active"></div>
+      <div class="slide-dot"></div>
+      <div class="slide-dot"></div>
+      <div class="slide-dot"></div>
+      <div class="slide-dot"></div>
+    </div>
+  </div>
+    <div class = "right-sight">
+      <div class = "green-cont">
+        <h1>55%</h1>
+      <h2>SUMMER SALES</h2>
+      </div>
+      <div class ="facebook">
+        <h3>Follow us on Facebook</h3>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+        <div class="btns">
+          <a  href="#">FOLLOW</a>
+       </div>
+      </div>
+
+    </div>
+
+</div>
+  
+<!--Js Script Carousel-->
+<script type="text/javascript">
+  var slides = $('.slide');
+var dot = $('.slide-dot');
+var $ = jQuery;
+
+
+var changeSlide = function(index){
+  slides.removeClass('active');
+  dot.removeClass('active');
+  slides.eq(index).addClass('active');
+  dot.eq(index).addClass('active');
+}
+
+var init = function( ) {
+  $(".slide-dot").on("click", function() {
+    var $this = $(this);
+     changeSlide($(this).index());
+    
+    console.log("qwe");
+  });
+};
+
+$(document).ready(function(){
+  init();
+});
+
+$(document).bind("DOMSubtreeModified", function( ){
+  init();
+});
+</script>
+
+<!--Popular-->
+<section class="cards">
+
+  <div class="title"><h1>Popular items</h1></div>
+    
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
+        
+        <div class="card__readmore">$ 799.55</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/check.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
+        
+        <div class="card__readmore">$129.55</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Coctail Table Walnut YES</div>
+        
+        <div class="card__readmore">$299.88</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
+    <div class="shows">
+    <a href="#" class="card">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+  
+  <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
+</section>
+
+  <!--Js Script Popular-->
+  <script type="text/javascript">
+    $(".shows").slice(0, 8).show(); //showing 8 div
+  
+    $(".loadMore").on("click",function(){
+      $(".shows:hidden").slice(0, 4).show(); //showing 4 hidden div on click
+  
+      if($(".shows:hidden").length ==0)
+      {
+        $(".loadMore").fadeOut(); //this will hide
+        //button when length is 0
+      }
+    })
+  </script>
+
+<!--Banner-->
+<div class="banner-area">
+  <h1>Banner OSF Theme</h1>
+  <h2>Sed ut perspiciatis unde omnis iste naus error sit volup-tatem accusantium</h2>
+</div>
+
+<!--Featured Products-->
+<section class="cards">
+
+  <div class="title"><h1>Featured Products</h1></div>
+  <div class="carousel owl-carousel">
+    <a href="#" class="card" id="c1">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
+        
+        <div class="card__readmore">$ 799.55</div>
+      </div>
+    </a>
   
 
+  
+    <a href="#" class="card" id="c2">
+      <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  
 
+    
+    <a href="#" class="card" id="c3">
+      <div class="card__image" style="background-image: url('/public/check.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
+        
+        <div class="card__readmore">$129.55</div>
+      </div>
+    </a>
+  
 
+    
+    <a href="#" class="card" id="c4">
+      <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Coctail Table Walnut YES</div>
+        
+        <div class="card__readmore">$299.88</div>
+      </div>
+    </a>
+  
 
-  <footer class = "stycky-footer">
-    <div id="foot"></div>
+  
+    <a href="#" class="card" id="c5">
+      <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  
+
+    
+    <a href="#" class="card" id="c6">
+      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  
+
+    
+    <a href="#" class="card" id="c7">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  
+
+    
+    <a href="#" class="card" id="c8">
+      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__content">
+        <div class="card__title">Best place to travel in the fall</div>
+        
+        <div class="card__readmore">Read More</div>
+      </div>
+    </a>
+  </div>
+
     
     
+  
+  
+</section>
+  
+
+<!-- Js Featured Products-->
+<script>
+  $(".carousel").owlCarousel({
+    loop: true,
+    margin: 25,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      300: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+      
+    }
+  })
+</script>
+
+<!--Footer-->
+  <footer class = "footer stycky-footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col ">
+              <h4><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
+              <h4>CONTACT</h4>
+              <ul class = "list-black">
+                  <li><a href="#">Headquarters:5600, Blvd. des Galeries, Bur 530 Quebec, Quebec G2K 2H6</a></li>
+                  <li><a href="#">contact@osf-global.com</a></li>
+                  <li><a href="#">+1(888)548-4344</a></li>
+                  
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>CATEGORIES</h4>
+              <ul>
+                  <li><a href="#">Alcohol</a></li>
+                  <li><a href="#">Art</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Drinks</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Home</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4></h4>
+              <ul>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Kids & Baby</a></li>
+                  <li><a href="#">Men's Fashion</a></li>
+                  <li><a href="#">Mobile</a></li>
+                  <li><a href="#">Motorcycle</a></li>
+                  <li><a href="#">Movies</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4></h4>
+              <ul>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Sport</a></li>
+                  <li><a href="#">Toys</a></li>
+                  <li><a href="#">Travel</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>ABOUT</h4>
+              <ul>
+                  <li><a href="#">Abous us</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
 </footer>
+
+
 </body>
 
 

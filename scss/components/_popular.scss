@@ -12,7 +12,6 @@
   // }
   
   .cards {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +20,7 @@
     max-width: 1270px;
     display: flex;
    margin-left: 18vh;
-   margin-top: 25px;
+   margin-top: 15px;
    background: #262a32;
     
   }
@@ -33,6 +32,7 @@
   }
   .shows{
     display: none;
+    margin: 0;
   }
   .card {
     display: flex;
@@ -49,7 +49,7 @@
     text-decoration: none;
     font-size: 1rem;
     transition: all 200ms ease-in-out;
-    // display: none;
+    
   
     &:hover {
       transform: translateY(-1rem);
@@ -87,7 +87,7 @@
       font-size:17px ;
     }
   }
- .loadMore{
+ .btn{
    
    padding: 25px;
    line-height: 15px;
