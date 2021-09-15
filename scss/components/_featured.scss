@@ -1,8 +1,44 @@
 
 
-  .card{
-      
+  .featured{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 15px;
+    max-width: 1245px;
+    display: flex;
+   margin-left: 17vh;
+   
+   background: #262a32;
+    
   }
+  .title-featured{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+  }
+.text-title p{
+  color: #fff;
+  font-size: 17px;
+}
+.text-title .slide-bar{
+  text-align: center;
+  font-size: 20px;
+  font-weight:600;
+}
+
+// .text-title h2::after {
+//   content: "";
+//   position: absolute;
+//   margin: auto;
+//   height: 2px;
+//   background: #fff;
+//   width: 39%;
+//   // top: 50%;
+//   left: 0;
+//   margin-top: 2px;
+//  }
   
    .carousel {
     position: relative;
@@ -16,50 +52,31 @@
     border-radius: 5px;
   }
   
-  #c1 {
-    background: url(../public/calendar.png) no-repeat center center/cover;
-  }
-  
-  #c2 {
-    background: url(../public/magazin.png) no-repeat center center/cover;
-  }
-  
-  #c3 {
-    background: url(../public/hand.png) no-repeat center center/cover;
-  }
-  
-  #c4 {
-    background: url(../public/sales.png) no-repeat center center/cover;
-  }
-  
-  #c5 {
-    background: url(./img/bike-5.jpg) no-repeat center center/cover;
-  }
-  
-  #c6 {
-    background: url(./img/bike-6.jpg) no-repeat center center/cover;
-  }
-  
-  .owl-dots {
+  .card__green{
+    color:#84bc22 ;
     text-align: center;
-    margin-top: 20px;
   }
   
-  .owl-dot {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-    margin: 0 5px;
-    border: 2px solid #fff !important;
-    transition: all 0.3s ease;
-  }
+  // .owl-dots {
+  //   text-align: center;
+  //   margin-top: 20px;
+  // }
   
-  .owl-dot:hover,
-  .owl-dot.active {
-    background-color: #fff !important;
-  }
+  // .owl-dot {
+  //   height: 15px;
+  //   width: 15px;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  //   outline: none;
+  //   margin: 0 5px;
+  //   border: 2px solid #fff !important;
+  //   transition: all 0.3s ease;
+  // }
+  
+  // .owl-dot:hover,
+  // .owl-dot.active {
+  //   background-color: #fff !important;
+  // }
   
   .owl-prev,
   .owl-next {

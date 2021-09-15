@@ -1,6 +1,6 @@
 .banner-area{
-    max-width: 1270px;
-    margin-left: 18vh;
+    max-width: 1275px;
+    margin-left: 17vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -13,12 +13,12 @@
     text-align: center;
     
 }
-h1{
+.banner-area h1{
     color: #fff;
     font-size: 45px;
     margin-top: 10rem;
 }
-h2{
+.banner-area h2{
     color: #fff;
     font-size: 14px;
     padding: 3rem;

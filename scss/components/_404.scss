@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'LatoWebLight',Arial;
-  }
-  
+
   #error-page{
     position: absolute;
     top: 10%;
@@ -26,7 +19,7 @@
     border-radius: 10px;
   }
   
-  .content h2.header{
+  .content .header h2{
     font-size: 6vw;
     line-height: 1em;
     position: relative;

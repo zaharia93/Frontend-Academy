@@ -14,7 +14,10 @@
     
   </head>
   <body>
-    
+
+
+
+  
     
 
 <!--Navbar-->
@@ -30,7 +33,7 @@
     <input type="radio" name="slider" id="menu-btn">
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
-      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <label for="close-btn" class="btn close-btn "><i class="fas fa-times"></i></label>
       <li>
         <a href="#" class="itema">SERVICES</a>
         <input type="checkbox" id="showMega">
@@ -106,12 +109,12 @@
       <li><a class = "grey" href="#"><i class="far fa-heart"></i></a></li>
       <li><a class = "grey" href="#"><i class="fas fa-shopping-bag"></i></a></li>
     </ul>
-    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-  </div>
+    <label for="menu-btn" class="btn menu-btn btnbars"><i class="fas fa-bars"></i></label>
+  
 </nav>
 
 <!--Carousel-->
-<div class = "top-carusel">
+ <div class = "top-carusel">
   <div class="img-slider">
     <div class="slide active">
       <img src="public/carusel.png" alt="">
@@ -119,7 +122,7 @@
         <h2>Control and manage any device with cloud solutions</h2>
         <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
         <div class="btns">
-            <a class = "search" href="#">VIEW MORE<i class="fas fa-search"></i></a>
+            <a class = "search" href="#">VIEW MORE</i></a>
          </div>
       </div>
     </div>
@@ -168,13 +171,13 @@
         <h3>Follow us on Facebook</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
         <div class="btns">
-          <a  href="#">FOLLOW</a>
+          <a  href="https://www.facebook.com">FOLLOW</a>
        </div>
       </div>
 
     </div>
 
-</div>
+</div> 
   
 <!--Js Script Carousel-->
 <script type="text/javascript">
@@ -211,8 +214,9 @@ $(document).bind("DOMSubtreeModified", function( ){
 <!--Popular-->
 <section class="cards">
 
-  <div class="title"><h1>Popular items</h1></div>
-    
+  <div class="title"><h2>Popular items</h2></div>
+  <div class="content-cards">
+  <div class="shows">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
       <div class="card__content">
@@ -345,6 +349,7 @@ $(document).bind("DOMSubtreeModified", function( ){
   </div>
   
   <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
+</div>
 </section>
 
   <!--Js Script Popular-->
@@ -369,93 +374,96 @@ $(document).bind("DOMSubtreeModified", function( ){
 </div>
 
 <!--Featured Products-->
-<section class="cards">
-
-  <div class="title"><h1>Featured Products</h1></div>
+<section class="featured">
+  <div class="text-title">
+  <div class="title-featured"><h1>Featured Products</h1></div>
+    <p>Unde omnis iste natus sit voluptatem</p>
+    <div class="slide-bar"><h2 >///</h2></div>
+</div>
   <div class="carousel owl-carousel">
     <a href="#" class="card" id="c1">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
       <div class="card__content">
         <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
         
-        <div class="card__readmore">$ 799.55</div>
+        <div class="card__green">Awesome</div>
       </div>
     </a>
   
 
   
     <a href="#" class="card" id="c2">
-      <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
+      <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
       <div class="card__content">
         <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
         
-        <div class="card__readmore">Read More</div>
+        <div class="card__green">Marketing</div>
       </div>
     </a>
   
 
     
     <a href="#" class="card" id="c3">
-      <div class="card__image" style="background-image: url('/public/check.png')"></div>
+      <div class="card__image" style="background-image: url('/public/hand.png')"></div>
       <div class="card__content">
         <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
         
-        <div class="card__readmore">$129.55</div>
+        <div class="card__green">Awesome</div>
       </div>
     </a>
   
 
     
     <a href="#" class="card" id="c4">
-      <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
+      <div class="card__image" style="background-image: url('/public/sales.png')"></div>
       <div class="card__content">
         <div class="card__title">Coctail Table Walnut YES</div>
         
-        <div class="card__readmore">$299.88</div>
+        <div class="card__green">Marketing</div>
       </div>
     </a>
   
 
   
     <a href="#" class="card" id="c5">
-      <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
+      <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
       <div class="card__content">
         <div class="card__title">Best place to travel in the fall</div>
         
-        <div class="card__readmore">Read More</div>
+        <div class="card__green">Awesome</div>
       </div>
     </a>
   
 
     
     <a href="#" class="card" id="c6">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+      <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
       <div class="card__content">
         <div class="card__title">Best place to travel in the fall</div>
         
-        <div class="card__readmore">Read More</div>
+        <div class="card__green">Marketing</div>
       </div>
     </a>
   
 
     
     <a href="#" class="card" id="c7">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__image" style="background-image: url('/public/sales.png')"></div>
       <div class="card__content">
         <div class="card__title">Best place to travel in the fall</div>
         
-        <div class="card__readmore">Read More</div>
+        <div class="card__green">Awesome</div>
       </div>
     </a>
   
 
     
     <a href="#" class="card" id="c8">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+      <div class="card__image" style="background-image: url('/public/hand.png')"></div>
       <div class="card__content">
         <div class="card__title">Best place to travel in the fall</div>
         
-        <div class="card__readmore">Read More</div>
+        <div class="card__green">Marketing</div>
       </div>
     </a>
   </div>
@@ -495,8 +503,112 @@ $(document).bind("DOMSubtreeModified", function( ){
   })
 </script>
 
+
+<!--Cookie-->
+<!-- <div class="cookie-container">
+  <p>
+    We use cookies in this website to give you the best experience on our
+    site and show you relevant ads. To find out more, read our
+    <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+  </p>
+
+  <button class="cookie-btn">
+    Okay
+  </button>
+</div> -->
+
+<!-- Js cookie-->
+<!-- <script type="text/javascript">
+  const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click", () => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+  if (!localStorage.getItem("cookieBannerDisplayed")) {
+    cookieContainer.classList.add("active");
+  }
+}, 2000);
+</script> -->
+
+<!--Login-->
+<!-- <div class="login">
+  <header>Login Form</header>
+  <form action="#" class="login-content">
+    <div class="field email">
+      <div class="input-area">
+        <input type="text" placeholder="Email Address">
+        <i class="icon fas fa-envelope"></i>
+        <i class="error error-icon fas fa-exclamation-circle"></i>
+      </div>
+      <div class="error error-txt">Email can't be blank</div>
+    </div>
+    <div class="field password">
+      <div class="input-area">
+        <input type="password" placeholder="Password">
+        <i class="icon fas fa-lock"></i>
+        <i class="error error-icon fas fa-exclamation-circle"></i>
+      </div>
+      <div class="error error-txt">Password can't be blank</div>
+    </div>
+    <div class="pass-txt"><a href="#">Forgot password?</a></div>
+    <input type="submit" value="Login">
+  </form>
+  <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+</div> -->
+
+<!--Login JS-->
+<!-- <script>
+  const form = document.querySelector("form");
+eField = form.querySelector(".email"),
+eInput = eField.querySelector("input"),
+pField = form.querySelector(".password"),
+pInput = pField.querySelector("input");
+form.onsubmit = (e)=>{
+  e.preventDefault(); //preventing from form submitting
+  //if email and password is blank then add shake class in it else call specified function
+  (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
+  (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
+  setTimeout(()=>{ //remove shake class after 500ms
+    eField.classList.remove("shake");
+    pField.classList.remove("shake");
+  }, 500);
+  eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
+  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
+  function checkEmail(){ //checkEmail function
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+    if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
+      eField.classList.add("error");
+      eField.classList.remove("valid");
+      let errorTxt = eField.querySelector(".error-txt");
+      //if email value is not empty then show please enter valid email else show Email can't be blank
+      (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
+    }else{ //if pattern matched then remove error and add valid class
+      eField.classList.remove("error");
+      eField.classList.add("valid");
+    }
+  }
+  function checkPass(){ //checkPass function
+    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
+      pField.classList.add("error");
+      pField.classList.remove("valid");
+    }else{ //if pass is empty then remove error and add valid class
+      pField.classList.remove("error");
+      pField.classList.add("valid");
+    }
+  }
+  //if eField and pField doesn't contains error class that mean user filled details properly
+  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
+    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
+  }
+}
+</script> -->
+
 <!--Footer-->
-  <footer class = "footer stycky-footer">
+  <!-- <footer class = "footer stycky-footer">
   <div class="container">
       <div class="row">
           <div class="footer-col ">
@@ -560,7 +672,7 @@ $(document).bind("DOMSubtreeModified", function( ){
           </div>
       </div>
   </div>
-</footer>
+</footer> -->
 
 
 </body>
