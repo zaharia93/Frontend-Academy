@@ -18,8 +18,6 @@
 
 
   
-    
-
 <!--Navbar-->
 <nav>
   <div class="wrapper">
@@ -33,15 +31,13 @@
     <input type="radio" name="slider" id="menu-btn">
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
-      <label for="close-btn" class="btn close-btn "><i class="fas fa-times"></i></label>
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
       <li>
-        <a href="#" class="itema">SERVICES</a>
-        <input type="checkbox" id="showMega">
-        <label for="showMega" class="mobile-item"></label>
+        <a href="#" class="itema">SERVICES<i class="fas fa-sort-down"></i></a>
         <div class="mega-box">
           <div class="content">
 
-            <div class="row">
+            <div class="row first-row">
               <header>Product Categories</header>
               <ul class="mega-links">
                 <li><a href="">Accesories</a></li>
@@ -58,7 +54,7 @@
             </div>
             <div class="row">
               <ul class="mega-links">
-                  <header> . </header>
+                  <header>  </header>
                   <li><a href="#">Gadgets</a></li>
                 <li><a href="#">Garden</a></li>
                 <li><a href="#">Grocery</a></li>
@@ -71,7 +67,7 @@
             </div>
             <div class="row">
               <ul class="mega-links">
-                  <header> .</header>
+                  <header> </header>
                   <li><a href="#">Motorcycle</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Music</a></li>
@@ -99,17 +95,18 @@
           </div>
         </div>
       </li>
-      <li><a href="#" >COMPANY</a></li>
+      <li><a href="#"  class="open">COMPANY</a></li>
       <li><a href="#">LIBRARY</a></li>
       <li><a href="#">CONTACT US</a></li>
       <li><a class = "grey" href="#">EN</a></li>
       <li><a class = "grey" href="#">$US</a></li>
       <li><a class = "grey" href="#"><i class="fas fa-search"></i></a></li>
-      <li><a class = "grey" href="#"><i class="far fa-user"></i></a></li>
+      <li><a class = "grey" href="/contact" id="contact" onclick="toggle()"><i class="far fa-user"></i></a></li>
       <li><a class = "grey" href="#"><i class="far fa-heart"></i></a></li>
       <li><a class = "grey" href="#"><i class="fas fa-shopping-bag"></i></a></li>
     </ul>
-    <label for="menu-btn" class="btn menu-btn btnbars"><i class="fas fa-bars"></i></label>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
   
 </nav>
 
@@ -117,7 +114,7 @@
  <div class = "top-carusel">
   <div class="img-slider">
     <div class="slide active">
-      <img src="public/carusel.png" alt="">
+      <img src="public/first.png" alt="">
       <div class="info">
         <h2>Control and manage any device with cloud solutions</h2>
         <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
@@ -127,31 +124,43 @@
       </div>
     </div>
     <div class="slide">
-      <img src="public/carusel.png" alt="">
+      <img src="public/third.png" alt="">
       <div class="info">
-        <h2>Slide 02</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Control and manage any device with cloud solutions</h2>
+        <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
+        <div class="btns">
+            <a class = "search" href="#">VIEW MORE</i></a>
+         </div>
       </div>
     </div>
     <div class="slide">
-      <img src="public/carusel.png" alt="">
+      <img src="public/second.png" alt="">
       <div class="info">
-        <h2>Slide 03</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Control and manage any device with cloud solutions</h2>
+        <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
+        <div class="btns">
+            <a class = "search" href="#">VIEW MORE</i></a>
+         </div>
       </div>
     </div>
     <div class="slide">
-      <img src="public/carusel.png" alt="">
+      <img src="public/third.png" alt="">
       <div class="info">
-        <h2>Slide 04</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Control and manage any device with cloud solutions</h2>
+        <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
+        <div class="btns">
+            <a class = "search" href="#">VIEW MORE</i></a>
+         </div>
       </div>
     </div>
     <div class="slide">
-      <img src="public/carusel.png" alt="">
+      <img src="public/first.png" alt="">
       <div class="info">
-        <h2>Slide 05</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Control and manage any device with cloud solutions</h2>
+        <p>Improve bussines performance and the user experience with the right mix of loT technology and process.</p>
+        <div class="btns">
+            <a class = "search" href="#">VIEW MORE</i></a>
+         </div>
       </div>
     </div>
     <div class="navigation">
@@ -178,45 +187,15 @@
     </div>
 
 </div> 
-  
-<!--Js Script Carousel-->
-<script type="text/javascript">
-  var slides = $('.slide');
-var dot = $('.slide-dot');
-var $ = jQuery;
-
-
-var changeSlide = function(index){
-  slides.removeClass('active');
-  dot.removeClass('active');
-  slides.eq(index).addClass('active');
-  dot.eq(index).addClass('active');
-}
-
-var init = function( ) {
-  $(".slide-dot").on("click", function() {
-    var $this = $(this);
-     changeSlide($(this).index());
-    
-    console.log("qwe");
-  });
-};
-
-$(document).ready(function(){
-  init();
-});
-
-$(document).bind("DOMSubtreeModified", function( ){
-  init();
-});
-</script>
+<!-- Js Carousel-->
+  <script src="/js/carusel.js"></script>
 
 <!--Popular-->
 <section class="cards">
 
   <div class="title"><h2>Popular items</h2></div>
   <div class="content-cards">
-  <div class="shows">
+  <div class="shows active">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
       <div class="card__content">
@@ -347,25 +326,18 @@ $(document).bind("DOMSubtreeModified", function( ){
       </div>
     </a>
   </div>
-  
   <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
+  <div class="navigation">
+    <div class="slide-dot active"></div>
+    <div class="slide-dot"></div>
+    <div class="slide-dot"></div>
+    <div class="slide-dot"></div>
+    <div class="slide-dot"></div>
+  </div>
 </div>
 </section>
-
-  <!--Js Script Popular-->
-  <script type="text/javascript">
-    $(".shows").slice(0, 8).show(); //showing 8 div
-  
-    $(".loadMore").on("click",function(){
-      $(".shows:hidden").slice(0, 4).show(); //showing 4 hidden div on click
-  
-      if($(".shows:hidden").length ==0)
-      {
-        $(".loadMore").fadeOut(); //this will hide
-        //button when length is 0
-      }
-    })
-  </script>
+<!--Js  Popular-->
+  <script src="/js/popular.js"></script>
 
 <!--Banner-->
 <div class="banner-area">
@@ -380,6 +352,7 @@ $(document).bind("DOMSubtreeModified", function( ){
     <p>Unde omnis iste natus sit voluptatem</p>
     <div class="slide-bar"><h2 >///</h2></div>
 </div>
+
   <div class="carousel owl-carousel">
     <a href="#" class="card" id="c1">
       <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
@@ -473,70 +446,27 @@ $(document).bind("DOMSubtreeModified", function( ){
   
   
 </section>
-  
-
 <!-- Js Featured Products-->
-<script>
-  $(".carousel").owlCarousel({
-    loop: true,
-    margin: 25,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    nav: true,
-    navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      300: {
-        items: 2,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-      
-    }
-  })
-</script>
-
+<script src="js/featured.js"></script>
 
 <!--Cookie-->
-<!-- <div class="cookie-container">
+<div class="overlay"></div>
+<div class="cookie-container" id="dialog">
+  <h1>This website uses cookies</h1>
   <p>
-    We use cookies in this website to give you the best experience on our
-    site and show you relevant ads. To find out more, read our
-    <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+   OSF uses its own and third-part cookies for statistical purposes, to know your preferencess, for website performance and interactions with social media offering publicity tailored to your interest.If you continue browsing , we consider that you accept its use.You can expand this information consulting our 
+    <a href="#">Cookies Policy Page.</a> 
   </p>
 
-  <button class="cookie-btn">
-    Okay
-  </button>
-</div> -->
-
+  <button class="cookie-btn" id="exit">Accept </button>
+</div>
+</div>
 <!-- Js cookie-->
-<!-- <script type="text/javascript">
-  const cookieContainer = document.querySelector(".cookie-container");
-const cookieButton = document.querySelector(".cookie-btn");
-
-cookieButton.addEventListener("click", () => {
-  cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed", "true");
-});
-
-setTimeout(() => {
-  if (!localStorage.getItem("cookieBannerDisplayed")) {
-    cookieContainer.classList.add("active");
-  }
-}, 2000);
-</script> -->
+<script src="js/cookie.js" ></script>
 
 <!--Login-->
-<!-- <div class="login">
-  <header>Login Form</header>
+<div class="login pop" id="blur">
+  <header>Sign in</header>
   <form action="#" class="login-content">
     <div class="field email">
       <div class="input-area">
@@ -551,128 +481,115 @@ setTimeout(() => {
         <input type="password" placeholder="Password">
         <i class="icon fas fa-lock"></i>
         <i class="error error-icon fas fa-exclamation-circle"></i>
+        <i class="eye" id="visibilityBtn"><span id="icon" class="material-icons"></span></i>
       </div>
       <div class="error error-txt">Password can't be blank</div>
     </div>
     <div class="pass-txt"><a href="#">Forgot password?</a></div>
-    <input type="submit" value="Login">
+    <input type="submit"  class="submit" value="Login">
   </form>
-  <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
-</div> -->
+  <div class="sign-txt"> <a href="#">I don't have an acount</a></div>
+</div> 
+<!--Js Login-->
+<script src="/js/login.js"></script>
 
-<!--Login JS-->
-<!-- <script>
-  const form = document.querySelector("form");
-eField = form.querySelector(".email"),
-eInput = eField.querySelector("input"),
-pField = form.querySelector(".password"),
-pInput = pField.querySelector("input");
-form.onsubmit = (e)=>{
-  e.preventDefault(); //preventing from form submitting
-  //if email and password is blank then add shake class in it else call specified function
-  (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
-  (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
-  setTimeout(()=>{ //remove shake class after 500ms
-    eField.classList.remove("shake");
-    pField.classList.remove("shake");
-  }, 500);
-  eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
-  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
-  function checkEmail(){ //checkEmail function
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
-    if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
-      eField.classList.add("error");
-      eField.classList.remove("valid");
-      let errorTxt = eField.querySelector(".error-txt");
-      //if email value is not empty then show please enter valid email else show Email can't be blank
-      (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
-    }else{ //if pattern matched then remove error and add valid class
-      eField.classList.remove("error");
-      eField.classList.add("valid");
-    }
-  }
-  function checkPass(){ //checkPass function
-    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
-      pField.classList.add("error");
-      pField.classList.remove("valid");
-    }else{ //if pass is empty then remove error and add valid class
-      pField.classList.remove("error");
-      pField.classList.add("valid");
-    }
-  }
-  //if eField and pField doesn't contains error class that mean user filled details properly
-  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
-  }
-}
-</script> -->
+<!--Benefit-->
+<div class="benefit">
+  <div class="rows first">
+    <div class="icon-benefit">
+      <i class="fas fa-dolly icons-benefit"></i>
+    </div>
+    <div class="benefit-text">
+      <h1>FOCUS</h1>
+      <h2>Our unwavering focus on superior service delivery and building next generatioon competencies</h2>
+    </div>
+  </div>
+  <div class="rows second ">
+    <div class="icon-benefit">
+      <i class="fas fa-recycle"></i>
+    </div>
+    <div class="benefit-text">
+      <h1>METHOD</h1>
+      <h2>A standardized metodology designed to deliver measuable bussines results and predictable costs</h2>
+    </div>
+  </div>
+  <div class="rows third">
+    <div class="icon-benefit">
+      <i class="fas fa-clipboard-check"></i>
+    </div>
+    <div class="benefit-text">
+      <h1>KNOWLEDGE</h1>
+      <h2>Ahighly skilled , proactive workforce that reliaby improves each cliennt's ROI while mitigating their bussines risk</h2>
+    </div>
+  </div>
+</div>
+
 
 <!--Footer-->
-  <!-- <footer class = "footer stycky-footer">
+  <footer class = "footer stycky-footer">
   <div class="container">
       <div class="row">
           <div class="footer-col ">
+            <ul>
               <h4><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
-              <h4>CONTACT</h4>
-              <ul class = "list-black">
+             <li><a href="javascript:void();"><h4>CONTACT <i class="fas fa-sort-down"></i></h4></a>
+              <ul class = "dropdown-menu list-black">
                   <li><a href="#">Headquarters:5600, Blvd. des Galeries, Bur 530 Quebec, Quebec G2K 2H6</a></li>
                   <li><a href="#">contact@osf-global.com</a></li>
                   <li><a href="#">+1(888)548-4344</a></li>
                   
               </ul>
+            </li>
+          </ul>
           </div>
           <div class="footer-col">
-              <h4>CATEGORIES</h4>
-              <ul>
+            <ul> 
+              <li><a href="javascript:void();">  <h4>CATEGORIES <i class="fas fa-sort-down"></i></h4></a>
+              <ul class="dropdown-menu">
                   <li><a href="#">Alcohol</a></li>
                   <li><a href="#">Art</a></li>
                   <li><a href="#">Books</a></li>
                   <li><a href="#">Drinks</a></li>
                   <li><a href="#">Electronics</a></li>
                   <li><a href="#">Home</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4></h4>
-              <ul>
                   <li><a href="#">Jewelry</a></li>
                   <li><a href="#">Kids & Baby</a></li>
                   <li><a href="#">Men's Fashion</a></li>
                   <li><a href="#">Mobile</a></li>
                   <li><a href="#">Motorcycle</a></li>
                   <li><a href="#">Movies</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4></h4>
-              <ul>
                   <li><a href="#">Music</a></li>
                   <li><a href="#">Sport</a></li>
                   <li><a href="#">Toys</a></li>
                   <li><a href="#">Travel</a></li>
               </ul>
+              </li>
+            </ul> 
           </div>
           <div class="footer-col">
-              <h4>ABOUT</h4>
-              <ul>
+             <ul> 
+              <li><a href="javascript:void();"></a> <h4>ABOUT<i class="fas fa-sort-down"></i></h4></a>
+                <ul class="dropdown-menu">
                   <li><a href="#">Abous us</a></li>
                   <li><a href="#">Delivery</a></li>
                   <li><a href="#">Testimonials</a></li>
                   <li><a href="#">Contact</a></li>
               </ul>
+            </li>
+            </ul>
           </div>
           <div class="footer-col">
               
               <div class="social-links">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
               </div>
           </div>
       </div>
   </div>
-</footer> -->
+</footer> 
 
 
 </body>

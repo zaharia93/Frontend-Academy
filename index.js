@@ -1,63 +1,58 @@
-const nav = new XMLHttpRequest();
-const foo = new XMLHttpRequest();
-// const err = new XMLHttpRequest();
-const car = new XMLHttpRequest();
-const pop = new XMLHttpRequest();
-const popular = document.getElementById('popular');
-const demo = document.getElementById('demo');
-const footer = document.getElementById('footer');
-// const eror = document.getElementById('eror');
-const carus = document.getElementById('carus');
-
-nav.onload = function() {
-    if(this.status === 200) {
-        demo.innerHTML = nav.responseText;
-    } else {
-        console.warn('Not found');
-    }
-};
-    nav.open('get', 'components/header.html');
-    nav.send();
 
 
-    foo.onload = function() {
-        if(this.status === 200) {
-            foot.innerHTML = foo.responseText;
-        } else {
-            console.warn('Not found');
-        }
-    };
-        foo.open('get', 'components/footer.html');
-        foo.send();
+
+                    
+var slides = $('.slide');
+var dot = $('.slide-dot');
 
 
-        // err.onload = function() {
-        //     if(this.status === 200) {
-        //         eror.innerHTML = err.responseText;
-        //     } else {
-        //         console.warn('Not found');
-        //     }
-        // };
-        //     err.open('get', 'components/404.html');
-        //     err.send();
 
+var changeSlide = function(index){
+  slides.removeClass('active');
+  dot.removeClass('active');
+  slides.eq(index).addClass('active');
+  dot.eq(index).addClass('active');
+}
+
+var init = function( ) {
+  $(".slide-dot").on("click", function() {
+    var $this = $(this);
+     changeSlide($(this).index());
     
-            car.onload = function() {
-                if(this.status === 200) {
-                    carus.innerHTML = car.responseText;
-                } else {
-                    console.warn('Not found');
-                }
-            };
-                car.open('get', 'components/carusel.html');
-                car.send();
+    console.log("qwe");
+  });
+};
 
-                pop.onload = function() {
-                    if(this.status === 200) {
-                        popular.innerHTML = pop.responseText;
-                    } else {
-                        console.warn('Not found');
-                    }
-                };
-                    pop.open('get', 'components/popular.html');
-                    pop.send();
+$(document).ready(function(){
+  init();
+  initCookie();
+});
+
+
+
+
+var initCookie = function(){
+   
+      
+          setTimeout(function(){
+            $(".overlay, .popup").fadeToggle();
+            $(".cookie-container").addClass("active");
+            console.log("asas");
+          }, 2000);
+      
+    
+      
+      //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+      $(".cookie-btn").on("click", function() {
+        $(".cookie-container").removeClass("active");
+        $(".overlay, .popup").fadeToggle();
+      });
+};
+
+
+
+
+
+
+
+

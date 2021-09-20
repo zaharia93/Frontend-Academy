@@ -1,0 +1,59 @@
+.benefit{
+    display: flex;
+    background:#45413e ;
+    width: 1265px;
+    height: 150px;
+    margin-left: 17vh;
+    padding: 5px;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.rows h1{
+    color: #ffff;
+    font-size: 19px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.rows h2{
+    color: #868380;
+    font-size: 12px;
+    text-align: center;
+}
+.icon-benefit{
+    color: #84bc22;
+    font-size: 50px;
+    padding: 10px;
+}
+
+@media ( max-width:350px){
+
+.benefit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    margin-left: 1px;
+    height: 550px;
+    .rows{
+        .icon-benefit{
+            padding: 55px;
+        }
+    }
+    .first{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+     .second{
+        display: flex;
+       
+    }
+    .third{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+}

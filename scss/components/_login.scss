@@ -1,16 +1,27 @@
-::selection{
-    color: #fff;
-    background: #5372F0;
-  }
+
   .login{
-    width: 380px;
-    padding: 40px 30px 50px 30px;
+    width: 450px;
+    // padding: 40px 30px 50px 30px;
+    display: none;
     background: #fff;
     border-radius: 5px;
     text-align: center;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+    margin-left: 35%;
+    position: relative;
+    top: -120rem;
+    z-index: 4;
+    .sign-txt{
+      padding-bottom: 25px;
+    }
   }
+.login.active{
+  visibility: hidden;
+}
+
   .login header{
+    padding-top: 25px;
+  
     font-size: 35px;
     font-weight: 600;
   }
@@ -18,8 +29,10 @@
     margin: 40px 0;
   }
   form .field{
-    width: 100%;
+    width: 55%;
     margin-bottom: 20px;
+    margin-left: 35px;
+    
   }
   form .field.shake{
     animation: shake 0.3s ease-in-out;
@@ -48,14 +61,14 @@
     font-size: 18px;
     background: none;
     caret-color: #5372F0;
-    border-radius: 5px;
+    border-radius: 25px;
     border: 1px solid #bfbfbf;
     border-bottom-width: 2px;
     transition: all 0.2s ease;
   }
   form .field input:focus,
   form .field.valid input{
-    border-color: #5372F0;
+    border-color: #bdbdbd;
   }
   form .field.shake input,
   form .field.error input{
@@ -79,7 +92,7 @@
   }
   form input:focus ~ .icon,
   form .field.valid .icon{
-    color: #5372F0;
+    color: #84bc22 ;
   }
   form .field.shake input:focus ~ .icon,
   form .field.error input:focus ~ .icon{
@@ -102,27 +115,59 @@
     display: block;
   }
   form .pass-txt{
-    text-align: left;
+    text-align: right;
     margin-top: -10px;
+    font-size: 14px;
+    margin-right:10px;
   }
   .login a{
-    color: #5372F0;
+    color: #84bc22;
     text-decoration: none;
+    font-size: 14px;
+    padding: 15px;
+  }
+  .login .sign-txt a{
+   
+    margin-bottom: 20px;
   }
   .login a:hover{
     text-decoration: underline;
   }
   form input[type="submit"]{
     height: 50px;
+    width: 50%;
     margin-top: 30px;
     color: #fff;
     padding: 0;
     border: none;
-    background: #5372F0;
+    background: #84bc22;
     cursor: pointer;
     border-bottom: 2px solid rgba(0,0,0,0.1);
     transition: all 0.3s ease;
   }
   form input[type="submit"]:hover{
-    background: #2c52ed;
+    background: #84bc28;
   }
+  
+.eye {
+  color: #bfbfbf;
+}
+ 
+@media ( max-width:350px){
+
+.login{
+  width: 300px;
+  margin-left: 10px;
+  top: -290rem;
+  header{
+
+  }
+  .login-content{
+
+  }
+  .sign-txt{
+
+  }
+}
+
+}

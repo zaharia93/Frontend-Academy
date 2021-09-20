@@ -1,6 +1,5 @@
 var slides = $('.slide');
 var dot = $('.slide-dot');
-var $ = jQuery;
 
 
 var changeSlide = function(index){
