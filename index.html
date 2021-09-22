@@ -24,7 +24,7 @@
      <div class = "logo-top">
       <img class = "img-logo" src="public/logo.png" alt="">
       <div class = "logo">
-           <div class="logo1"><a href="#">OSF</a></div>
+           <div class="logo1"><a href="index.html">OSF</a></div>
           <div class="logo2"><a href="#">Academy</a></div>
       </div>
   </div>
@@ -35,27 +35,22 @@
       <li>
         <a href="#" class="itema">SERVICES<i class="fas fa-sort-down"></i></a>
         <div class="mega-box">
-          <div class="content">
+          
 
             <div class="row first-row">
-              <header>Product Categories</header>
+              <ul>
+              <li> <a href="#" class="itema">  <header>Product Categories<i class="fas fa-sort-down"></i></header></a>
               <ul class="mega-links">
-                <li><a href="">Accesories</a></li>
-                <li><a href="#">Alcohol</a></li>
+                <li><a href="/con">Accesories</a></li>
+                <li><a href="./components/404.html">Alcohol</a></li>
                 <li><a href="#">art</a></li>
                 <li><a href="#">Books</a></li>
                 <li><a href="#">Drink</a></li>
                 <li><a href="#">Electronics</a></li>
                 <li><a href="#">Flowers & Plants</a></li>
                 <li><a href="#">Food</a></li>
-                
-                
-              </ul>
-            </div>
-            <div class="row">
-              <ul class="mega-links">
-                  <header>  </header>
-                  <li><a href="#">Gadgets</a></li>
+
+                <li><a href="#">Gadgets</a></li>
                 <li><a href="#">Garden</a></li>
                 <li><a href="#">Grocery</a></li>
                 <li><a href="#">Home</a></li>
@@ -63,12 +58,8 @@
                 <li><a href="#">Kids & Baby</a></li>
                 <li><a href="#">Men's Fashion</a></li>
                 <li><a href="#">Mobile</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <ul class="mega-links">
-                  <header> </header>
-                  <li><a href="#">Motorcycle</a></li>
+             
+                <li><a href="#">Motorcycle</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Office</a></li>
@@ -77,10 +68,14 @@
                 <li><a href="#">Sport</a></li>
                 <li><a href="#">Toys</a></li>
               </ul>
+            </li>
+          </ul>
             </div>
+          
             <div class="row">
+              <ul >
+                <li><header>Sale<i class="fas fa-sort-down"></i></header>
               <ul class="mega-links">
-              <header>Sale</header>
                   <li><a href="#">Accesories</a></li>
                   <li><a href="#">Alcohol</a></li>
                   <li><a href="#">art</a></li>
@@ -89,21 +84,27 @@
                   <li><a href="#">Electronics</a></li>
                   <li><a href="#">Flowers & Plants</a></li>
                   <li><a href="#">Food</a></li>
-              </ul>
-            </div>
+                </ul>
+              </li>
+            </ul>
+              </div>
              <img class = "img-cast" src="public/cast.png" alt="">
-          </div>
+          
         </div>
       </li>
       <li><a href="#"  class="open">COMPANY</a></li>
       <li><a href="#">LIBRARY</a></li>
       <li><a href="#">CONTACT US</a></li>
-      <li><a class = "grey" href="#">EN</a></li>
-      <li><a class = "grey" href="#">$US</a></li>
-      <li><a class = "grey" href="#"><i class="fas fa-search"></i></a></li>
-      <li><a class = "grey" href="/contact" id="contact" onclick="toggle()"><i class="far fa-user"></i></a></li>
-      <li><a class = "grey" href="#"><i class="far fa-heart"></i></a></li>
-      <li><a class = "grey" href="#"><i class="fas fa-shopping-bag"></i></a></li>
+      <li><a class = "grey" href="/contact">EN</a></li>
+      <li><a class = "grey" href="/contact">$US</a></li>
+      <div class="nav-bottom">
+        <ul>
+              <li><a class = "grey" href="/contact"><i class="fas fa-search"></i></a></li>
+              <li><a class = "grey" href="/contact" id="contact" onclick="toggle()"><i class="far fa-user"></i></a></li>
+              <li><a class = "grey" href="/contact"><i class="far fa-heart"></i></a></li>
+              <li><a class = "grey" href="/con" id="con" onclick="toggle()"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+          </div>
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
   </div>
@@ -194,16 +195,19 @@
 <section class="cards">
 
   <div class="title"><h2>Popular items</h2></div>
-  <div class="content-cards">
+  <div class="content-cards ">
   <div class="shows active">
     <a href="#" class="card">
       <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
       <div class="card__content">
         <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
-        
         <div class="card__readmore">$ 799.55</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
   <div class="shows">
@@ -214,7 +218,12 @@
         
         <div class="card__readmore">Read More</div>
       </div>
+      
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -226,6 +235,10 @@
         <div class="card__readmore">$129.55</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -237,6 +250,10 @@
         <div class="card__readmore">$299.88</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
   <div class="shows">
@@ -248,6 +265,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -259,6 +280,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -270,6 +295,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -281,6 +310,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -292,6 +325,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -303,6 +340,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -314,6 +355,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
 
     <div class="shows">
@@ -325,6 +370,10 @@
         <div class="card__readmore">Read More</div>
       </div>
     </a>
+    <div class="overlay-content">
+      <button class="plus"><i class="fas fa-plus"></i></button>
+      <button class="love"><i class="fas fa-heart"></i></button>
+    </div>
   </div>
   <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
   <div class="navigation">
@@ -452,12 +501,12 @@
 <!--Cookie-->
 <div class="overlay"></div>
 <div class="cookie-container" id="dialog">
+  <button class="  close-btns " id="exit"><i class="fas fa-times"></i> </button>
   <h1>This website uses cookies</h1>
   <p>
    OSF uses its own and third-part cookies for statistical purposes, to know your preferencess, for website performance and interactions with social media offering publicity tailored to your interest.If you continue browsing , we consider that you accept its use.You can expand this information consulting our 
     <a href="#">Cookies Policy Page.</a> 
   </p>
-
   <button class="cookie-btn" id="exit">Accept </button>
 </div>
 </div>
@@ -524,7 +573,56 @@
   </div>
 </div>
 
+<!--404 Page-->
+<!-- <div class="poping pop" id="error-page">
+  <div class="content">
+      <div class= "left">
+     <h2 > Oops! </h2>
+  </div>
+    <div class="right">
+         <h4 > Sorry , this page could not be found!</h4>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
+     <ul class = "fis"><a  href="#">Go back to Homepage.</a></ul>
+     <div class="btns">
+        
+        <h4>Search our site.</h4>
+        <a class = "search" href="#">SEARCH<i class="fas fa-search"></i></a>
+     </div>
+  </div>
+</div> -->
+
+<script >
+//  function deselect(e) {
+//   $('.poping').slideFadeToggle(function() {
+//     e.removeClass('selected');
+//   });    
+// }
+
+// $(function() {
+//   $('#con').on('click', function() {
+//     $(" .popup").fadeToggle();
+//     if($(this).hasClass('selected')) {
+//       deselect($(this)); 
+                    
+//     } else {
+//       $(this).addClass('selected');
+//       $('.poping').slideFadeToggle();
+//     }
+//     return false;
+//   });
+
+//   $('.fis').on('click', function() {
+//     deselect($('#contact'));
+//     $(" .popup").fadeToggle();
+//     return false;
+//   });
+// });
+
+// $.fn.slideFadeToggle = function(easing, callback) {
+//   return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+// };
+</script>
 <!--Footer-->
   <footer class = "footer stycky-footer">
   <div class="container">
@@ -590,6 +688,7 @@
       </div>
   </div>
 </footer> 
+
 
 
 </body>

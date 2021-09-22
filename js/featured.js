@@ -1,6 +1,6 @@
 $(".carousel").owlCarousel({
     loop: true,
-    margin: 25,
+   
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,

@@ -10,7 +10,8 @@ var initCookie = function(){
 
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
-$(".cookie-btn").on("click", function() {
+$(".cookie-btn, .close-btns").on("click", function() {
+  
   $(".cookie-container").removeClass("active");
   $(".overlay, .popup").fadeToggle();
 });
@@ -19,3 +20,5 @@ $(document).ready(function(){
     
     initCookie();
   });
+
+  

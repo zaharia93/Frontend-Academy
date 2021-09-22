@@ -53,8 +53,9 @@
  
   
    .carousel {
+     display: flex;
     position: relative;
-    max-width: 1150px;
+    max-width:1500px;
     margin: auto;
     padding: 0 60px;
   }
@@ -62,6 +63,9 @@
   .carousel .card {
     // max-height: 150px;
     border-radius: 5px;
+    // padding: 20px;
+    // box-shadow: none;
+    // background: #262a32;
   }
   
   .card__green{
@@ -95,17 +99,19 @@
 
   .owl-prev,
   .owl-next {
-    position: absolute;
+    position:relative;
     top: 51%;
     transform: translate(-50%, -50%);
   }
   
   .owl-prev {
-    left: 40px;
+    left: 70px;
+    top:-24.3rem;
   }
   
   .owl-next {
-    right: 20px;
+    right: -138vh;
+    top:-24.3rem;
   }
   
   .fa-chevron-left,
@@ -149,5 +155,13 @@
   }
   
 }
+.owl-prev {
+  left: 15px;
+  top:-24.3rem;
+}
 
+.owl-next {
+  right: -40vh;
+  top:-24.3rem;
+}
   }
