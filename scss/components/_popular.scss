@@ -197,7 +197,34 @@ span{
       right: 0;
      }
    }
+   .overlay-content{
+     margin-left: -30px;
+   }
+   .owl-prev,
+   .owl-next {
+     display: none;
+   }
+   .owl-carousel{
+     width: 300px;
+     
+    .owl-stage-outer{
+     // gap: 20px;
+     width: 250px;
+     margin-left: 25px;
+      .owl-item{
+       // gap: 20px;
+       
+      }
+      .owl-item .cloned{
+       
+       // gap: 20px;
+      }
+      
+    }
+   }
 }
-
+.loadMore{
+  display: none;
+}
 }
  

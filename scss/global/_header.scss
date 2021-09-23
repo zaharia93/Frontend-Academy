@@ -17,8 +17,9 @@
     border-bottom:px solid #e8e2d6;
     height: 75px;
     .fa-sort-down{
-      margin-left: 20px;
-      
+      text-align: center;
+      margin-left: 10px;
+      color:  #b3b3b3;
     }
     input{
       display: none;
@@ -71,7 +72,7 @@
             text-decoration: none;
             font-size: 13px;
             font-weight: 540;
-            padding: 9px 15px;
+            padding: 20px 15px;
             transition: all 0.3s ease;
           }
         }
@@ -181,7 +182,7 @@
 }
 
 
-@media ( max-width:350px) {
+@media ( max-width:500px) {
 
 nav{
   flex:0 0 100%;
@@ -242,9 +243,7 @@ nav{
       box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
       transition: all 0.3s ease;
       z-index: 3;
-      .fa-sort-down{
-        margin-left: 15px;
-      }
+      
       .desktop-item{
         display: none;}
       .mobile-item{

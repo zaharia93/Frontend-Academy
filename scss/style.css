@@ -19,7 +19,9 @@
     height: 75px;
   }
   nav .fa-sort-down {
-    margin-left: 20px;
+    text-align: center;
+    margin-left: 10px;
+    color: #b3b3b3;
   }
   nav input {
     display: none;
@@ -86,7 +88,7 @@
     text-decoration: none;
     font-size: 13px;
     font-weight: 540;
-    padding: 9px 15px;
+    padding: 20px 15px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
@@ -196,7 +198,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -268,9 +270,6 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 3;
-  }
-  nav .wrapper .nav-links .fa-sort-down {
-    margin-left: 15px;
   }
   nav .wrapper .nav-links .desktop-item {
     display: none;
@@ -537,6 +536,13 @@ ul {
     width: 100%;
     position: relative;
   }
+  .footer-col h4 {
+    margin-bottom: 0;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer-col .fa-sort-down {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,7 +551,8 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 50px;
+    margin-left: 5px;
+    color: #b3b3b3;
   }
   .footer-col ul li {
     list-style: none;
@@ -749,7 +756,7 @@ ul {
   margin: 10px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .top-carusel {
     padding: 1px;
     width: 320px;
@@ -1030,6 +1037,23 @@ span {
     top: 50%;
     right: 0;
   }
+  .cards .overlay-content {
+    margin-left: -30px;
+  }
+  .cards .owl-prev,
+  .cards .owl-next {
+    display: none;
+  }
+  .cards .owl-carousel {
+    width: 300px;
+  }
+  .cards .owl-carousel .owl-stage-outer {
+    width: 250px;
+    margin-left: 25px;
+  }
+  .loadMore {
+    display: none;
+  }
 }
 
 .banner-area {
@@ -1066,7 +1090,7 @@ span {
   font-weight: normal;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .banner-area {
     width: 340px;
     margin-left: 0;
@@ -1188,24 +1212,16 @@ span {
   color: #777;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .featured {
     margin-left: 1px;
-    max-width: 320px;
+    max-width: 310px;
   }
   .featured .owl-carousel {
     width: 300px;
   }
   .featured .owl-carousel .owl-stage-outer {
-    gap: 20px;
-  }
-  .featured .owl-carousel .owl-stage-outer .owl-item {
-    gap: 20px;
-    width: 100px;
-  }
-  .featured .owl-carousel .owl-stage-outer .owl-item .cloned {
-    width: 100px;
-    gap: 20px;
+    width: 250px;
   }
   .owl-prev {
     left: 15px;
@@ -1413,7 +1429,7 @@ p {
   margin-left: 130vh;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .cookie-container .close-btns {
     margin-left: 40vh;
   }
@@ -1636,7 +1652,7 @@ form input[type="submit"]:hover {
   color: #bfbfbf;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .login {
     width: 300px;
     margin-left: 10px;
@@ -1684,7 +1700,7 @@ form input[type="submit"]:hover {
   padding: 10px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .benefit {
     display: -webkit-box;
     display: -ms-flexbox;
