@@ -8,7 +8,7 @@
     box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
     margin-left: 35%;
     position: relative;
-    bottom: 140rem;
+    bottom: 100rem;
     z-index: 4;
     .sign-txt{
       padding-bottom: 25px;
@@ -152,13 +152,13 @@
   color: #bfbfbf;
 }
  
-@media ( max-width:500px){
+@media ( max-width:768px){
 
 .login{
   width: 300px;
   margin-left: 10px;
   
-  top: -300rem;
+  top: -50rem;
   header{
   }
  

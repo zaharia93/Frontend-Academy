@@ -4,37 +4,47 @@
 // // // Footer
 @import "global/footer";
 
-// // Components
-@import "components/carousel";
+// //Featured
+@import "components/featured";
 
 // // // Popular
 @import "components/popular";
 
-// //Banner
+// //Featured
+@import "components/breadcrumbs";//
+
+//Banner
 @import "components/banner";
 
-// //Featured
-@import "components/featured";
+// Components
+@import "components/carousel";
 
-// // // 404
- @import "components/404";
-
-
-// // //Cookie
+//Cookie
 @import "components/cookie";
 
-
-// // //Login
+//Login
 @import "components/login";
 
-// //Benefit
+//Benefit
 @import "components/benefit";
 
+// Settings
+@import "global/settings";
+
+//Mixins
+@import "global/mixins";
 
 
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
+
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";
+
+
+
+
+
+
