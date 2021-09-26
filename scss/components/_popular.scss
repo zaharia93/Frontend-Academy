@@ -1,25 +1,21 @@
+.popular-wrapper {
+  background-color: #262a32;
+}
 
 .cards{
-  background: #262a32;
    margin-left: 1px;
    margin-top: 15px;
-   max-width: 310px;
    padding: 15px;
-
-   @include breakpoint("md") {
-    max-width: 100%;
-   }
 
    .content-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
     display: flex;
     
     .shows{
       display: none;
-      margin: 0;
+      margin: 10px 0;
       position: relative;
 
       .overlay-content{
@@ -72,8 +68,6 @@
         display: flex;
         flex-direction: column;
         flex: 80px 0 150px;
-        max-width: 250px;
-        min-width: 250px;
         max-height: 350px;
         min-height: 350px;
         overflow: hidden;
@@ -96,6 +90,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
+          width: 100%;
         }
       
         &__content {
@@ -180,12 +175,9 @@
      display: none;
    }
    .owl-carousel{
-     width: 300px;
-     
+
     .owl-stage-outer{
-     
-     width: 250px;
-     margin-left: 25px;
+
       // .owl-item{
       //  // gap: 20px;
       // }

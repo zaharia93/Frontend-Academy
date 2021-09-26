@@ -1,17 +1,17 @@
 // Header
 @import "global/header";
 
-// // // Footer
+ // Footer
 @import "global/footer";
 
-// //Featured
+ //Featured
 @import "components/featured";
 
-// // // Popular
+// Popular
 @import "components/popular";
 
-// //Featured
-@import "components/breadcrumbs";//
+ //Featured
+@import "components/breadcrumbs";
 
 //Banner
 @import "components/banner";
@@ -34,7 +34,8 @@
 //Mixins
 @import "global/mixins";
 
-
+//404 Page
+ @import "components/404";
 
 // @import "components/featured";// //Featured
 // @import "components/featured";// //Featured

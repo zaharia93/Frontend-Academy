@@ -1,564 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSF Academy</title>
-    
-    <link rel="stylesheet" href="/scss/clp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    
-  </head>
-  <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSF Academy</title>
+
+  <link rel="stylesheet" href="/scss/clp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+</head>
 
-  
-<!--Navbar-->
-<nav>
-  <div class="wrapper">
-     <div class = "logo-top">
-      <img class = "img-logo" src="/public/logo.png" alt="">
-      <div class = "logo">
-           <div class="logo1"><a href="/index.html">OSF</a></div>
-          <div class="logo2"><a href="#">Academy</a></div>
-      </div>
-  </div>
-    <input type="radio" name="slider" id="menu-btn">
-    <input type="radio" name="slider" id="close-btn">
-    <ul class="nav-links">
-      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-      <li>
-        <a href="#" class="itema">SERVICES<i class="fas fa-sort-down"></i></a>
-        <div class="mega-box">
-          
-
-            <div class="row first-row">
-              <ul>
-              <li> <a href="#" class="itema">  <header>Product Categories<i class="fas fa-sort-down"></i></header></a>
-              <ul class="mega-links">
-                <li><a href="/con">Accesories</a></li>
-                <li><a href="/components/404.html">Alcohol</a></li>
-                <li><a href="#">art</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Drink</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Flowers & Plants</a></li>
-                <li><a href="#">Food</a></li>
-
-                <li><a href="#">Gadgets</a></li>
-                <li><a href="#">Garden</a></li>
-                <li><a href="#">Grocery</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Jewelry</a></li>
-                <li><a href="#">Kids & Baby</a></li>
-                <li><a href="#">Men's Fashion</a></li>
-                <li><a href="#">Mobile</a></li>
-             
-                <li><a href="#">Motorcycle</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Romantic</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Toys</a></li>
-              </ul>
-            </li>
-          </ul>
-            </div>
-          
-            <div class="row">
-              <ul >
-                <li><header>Sale<i class="fas fa-sort-down"></i></header>
-              <ul class="mega-links">
-                  <li><a href="#">Accesories</a></li>
-                  <li><a href="#">Alcohol</a></li>
-                  <li><a href="#">art</a></li>
-                  <li><a href="#">Books</a></li>
-                  <li><a href="#">Drink</a></li>
-                  <li><a href="#">Electronics</a></li>
-                  <li><a href="#">Flowers & Plants</a></li>
-                  <li><a href="#">Food</a></li>
-                </ul>
-              </li>
-            </ul>
-              </div>
-             <img class = "img-cast" src="public/cast.png" alt="">
-          
-        </div>
-      </li>
-      <li><a href="/components/clp.html"  class="open">COMPANY</a></li>
-      <li><a href="#">LIBRARY</a></li>
-      <li><a href="#">CONTACT US</a></li>
-      <li><a class = "grey" href="#">EN<i class="fas fa-sort-down"></i></a>
-        <ul class="drop">
-          <li>EN</li>
-          <li>FR</li>
-          <li>UN</li>
-          <li>RO</li>
-        </ul>
-        </li>
-        <li><a class = "grey " href="#">$US<i class="fas fa-sort-down"></i></a>
-          <ul class="drop">
-            <li>$US</li>
-            <li>EUR</li>
-            <li>UAH</li>
-            
-          </ul></li>
-      <div class="nav-bottom">
-        <ul>
-              <li><a class = "grey" href="/contact"><i class="fas fa-search"></i></a></li>
-              <li><a class = "grey" href="/contact" id="contact" onclick="toggle()"><i class="far fa-user"></i></a></li>
-              <li><a class = "grey" href="/contact"><i class="far fa-heart"></i></a></li>
-              <li><a class = "grey" href="/con" id="con" onclick="toggle()"><i class="fas fa-shopping-bag"></i></a></li>
-            </ul>
-          </div>
-    </ul>
-    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-  </div>
-  
-</nav>
-
-<!--Breadcrumbs-->
-
-<section class="breadcrumbs">
-  <ul class="breadcrumbs-nav">
-    <li>Home</li>
-    <li>Category Landing Services</li>
-  </ul>
-</section>
-
-<!--Popular-->
-<section class="cards">
-
-  <div class="title"><h2>Popular items</h2></div>
-  <div class="content-cards  owl-carousel">
-  
-    <div class="shows active">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
-        <div class="card__readmore">$ 799.55</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-  <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-      
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/check.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
-        
-        <div class="card__readmore">$129.55</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Coctail Table Walnut YES</div>
-        
-        <div class="card__readmore">$299.88</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-  <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/chair.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-
-    <div class="shows">
-    <a href="#" class="card">
-      <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__readmore">Read More</div>
-      </div>
-    </a>
-    <div class="overlay-content">
-      <button class="plus"><i class="fas fa-plus"></i></button>
-      <button class="love"><i class="fas fa-heart"></i></button>
-    </div>
-  </div>
-  <button class="btn btn-danger center-block loadMore">LOAD MORE <i class="fas fa-chevron-circle-down"></i></button>
-  
-</div>
-
-
-</section>
-<!--Js  Popular-->
-  
-  <script src="../js/popular.js"></script>
-
-<!--Featured Products-->
-<section class="featured">
-  <div class="text-title">
-  <div class="title-featured"><h1>Featured Products</h1></div>
-    <p>Unde omnis iste natus sit voluptatem</p>
-    <div class="slide-bar"><h2 >///</h2></div>
-</div>
-
-  <div class="carousel owl-carousel">
-    <a href="#" class="card" id="c1">
-      <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
-        
-        <div class="card__green">Awesome</div>
-      </div>
-    </a>
-  
-
-  
-    <a href="#" class="card" id="c2">
-      <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
-        
-        <div class="card__green">Marketing</div>
-      </div>
-    </a>
-  
-
-    
-    <a href="#" class="card" id="c3">
-      <div class="card__image" style="background-image: url('/public/hand.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
-        
-        <div class="card__green">Awesome</div>
-      </div>
-    </a>
-  
-
-    
-    <a href="#" class="card" id="c4">
-      <div class="card__image" style="background-image: url('/public/sales.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Coctail Table Walnut YES</div>
-        
-        <div class="card__green">Marketing</div>
-      </div>
-    </a>
-  
-
-  
-    <a href="#" class="card" id="c5">
-      <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__green">Awesome</div>
-      </div>
-    </a>
-  
-
-    
-    <a href="#" class="card" id="c6">
-      <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__green">Marketing</div>
-      </div>
-    </a>
-  
-
-    
-    <a href="#" class="card" id="c7">
-      <div class="card__image" style="background-image: url('/public/sales.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__green">Awesome</div>
-      </div>
-    </a>
-  
-
-    
-    <a href="#" class="card" id="c8">
-      <div class="card__image" style="background-image: url('/public/hand.png')"></div>
-      <div class="card__content">
-        <div class="card__title">Best place to travel in the fall</div>
-        
-        <div class="card__green">Marketing</div>
-      </div>
-    </a>
-  </div>
-</section>
-<!-- Js Featured Products-->
-<script src="../js/featured.js"></script>
-
-
-
-<!--404 Page-->
-<!-- <div class="poping pop" id="error-page">
-  <div class="content">
-      <div class= "left">
-     <h2 > Oops! </h2>
-  </div>
-    <div class="right">
-         <h4 > Sorry , this page could not be found!</h4>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-     <ul class = "fis"><a  href="#">Go back to Homepage.</a></ul>
-     <div class="btns">
-        
-        <h4>Search our site.</h4>
-        <a class = "search" href="#">SEARCH<i class="fas fa-search"></i></a>
-     </div>
-  </div>
-</div> -->
-
-<script >
-//  function deselect(e) {
-//   $('.poping').slideFadeToggle(function() {
-//     e.removeClass('selected');
-//   });    
-// }
-
-// $(function() {
-//   $('#con').on('click', function() {
-//     $(" .popup").fadeToggle();
-//     if($(this).hasClass('selected')) {
-//       deselect($(this)); 
-                    
-//     } else {
-//       $(this).addClass('selected');
-//       $('.poping').slideFadeToggle();
-//     }
-//     return false;
-//   });
-
-//   $('.fis').on('click', function() {
-//     deselect($('#contact'));
-//     $(" .popup").fadeToggle();
-//     return false;
-//   });
-// });
-
-// $.fn.slideFadeToggle = function(easing, callback) {
-//   return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
-// };
-</script>
-<!--Footer-->
-  <footer class = "footer stycky-footer">
+<body>
   <div class="container">
-      <div class="row">
-          <div class="footer-col ">
-            <ul>
-              <h4><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
-             <li><a href="javascript:void();"><h4>CONTACT <i class="fas fa-sort-down"></i></h4></a>
-              <ul class = "dropdown-menu list-black">
-                  <li><a href="#">Headquarters:5600, Blvd. des Galeries, Bur 530 Quebec, Quebec G2K 2H6</a></li>
-                  <li><a href="#">contact@osf-global.com</a></li>
-                  <li><a href="#">+1(888)548-4344</a></li>
-                  
-              </ul>
-            </li>
-          </ul>
-          </div>
-          <div class="footer-col">
-            <ul> 
-              <li><a href="javascript:void();">  <h4>CATEGORIES <i class="fas fa-sort-down"></i></h4></a>
-              <ul class="dropdown-menu long">
-                  <li><a href="#">Alcohol</a></li>
-                  <li><a href="#">Art</a></li>
-                  <li><a href="#">Books</a></li>
-                  <li><a href="#">Drinks</a></li>
-                  <li><a href="#">Electronics</a></li>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Jewelry</a></li>
-                  <li><a href="#">Kids & Baby</a></li>
-                  <li><a href="#">Men's Fashion</a></li>
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Motorcycle</a></li>
-                  <li><a href="#">Movies</a></li>
-                  <li><a href="#">Music</a></li>
-                  <li><a href="#">Sport</a></li>
-                  <li><a href="#">Toys</a></li>
-                  <li><a href="#">Travel</a></li>
-              </ul>
-              </li>
-            </ul> 
-          </div>
-          <div class="footer-col">
-             <ul> 
-              <li><a href="javascript:void();"></a> <h4>ABOUT<i class="fas fa-sort-down"></i></h4></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Abous us</a></li>
-                  <li><a href="#">Delivery</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-            </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-              
-              <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+    <!--Navbar-->
+    <div class="row">
+      <div class="column sm-12">
+        <nav>
+          <div class="wrapper">
+            <div class="row">
+              <div class="column sm-3 md-6 lg-3">
+                <div class="logo-top">
+                  <img class="img-logo" src="/public/logo.png" alt="">
+                  <div class="logo">
+                    <div class="logo1"><a href="/index.html">OSF</a></div>
+                    <div class="logo2"><a href="#">Academy</a></div>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-  </div>
-</footer> 
 
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+
+              <div class="column sm-12 md-6 lg-9">
+                <ul class="nav-links">
+                  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                  <li>
+                    <a href="#" class="itema">SERVICES<i class="fas fa-sort-down"></i></a>
+                    <div class="mega-box">
+                      <div class="container">
+                        <div class="row">
+                          <div class="columns sm-12 lg-7 first-row">
+
+                            <ul>
+                              <li class="row-mega-links-trigger"> <a href="#" class="itema">
+                                  <header>Product Categories<i class="fas fa-sort-down"></i></header>
+                                </a>
+                                <ul class="mega-links">
+                                  <li><a href="/components/404.html">Accesories</a></li>
+                                  <li><a href="/components/404.html">Alcohol</a></li>
+                                  <li><a href="#">art</a></li>
+                                  <li><a href="#">Books</a></li>
+                                  <li><a href="#">Drink</a></li>
+                                  <li><a href="#">Electronics</a></li>
+                                  <li><a href="#">Flowers & Plants</a></li>
+                                  <li><a href="#">Food</a></li>
+
+                                  <li><a href="#">Gadgets</a></li>
+                                  <li><a href="#">Garden</a></li>
+                                  <li><a href="#">Grocery</a></li>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">Jewelry</a></li>
+                                  <li><a href="#">Kids & Baby</a></li>
+                                  <li><a href="#">Men's Fashion</a></li>
+                                  <li><a href="#">Mobile</a></li>
+
+                                  <li><a href="#">Motorcycle</a></li>
+                                  <li><a href="#">Movies</a></li>
+                                  <li><a href="#">Music</a></li>
+                                  <li><a href="#">Office</a></li>
+                                  <li><a href="#">Pets</a></li>
+                                  <li><a href="#">Romantic</a></li>
+                                  <li><a href="#">Sport</a></li>
+                                  <li><a href="#">Toys</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="column sm-12 lg-2">
+                            <ul>
+                              <li>
+                                <header>Sale<i class="fas fa-sort-down"></i></header>
+                                <ul class="mega-links">
+                                  <li><a href="#">Accesories</a></li>
+                                  <li><a href="#">Alcohol</a></li>
+                                  <li><a href="#">art</a></li>
+                                  <li><a href="#">Books</a></li>
+                                  <li><a href="#">Drink</a></li>
+                                  <li><a href="#">Electronics</a></li>
+                                  <li><a href="#">Flowers & Plants</a></li>
+                                  <li><a href="#">Food</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="column sm-12 lg-3">
+                            <img class="img-cast" src="public/cast.png" alt="">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="/components/clp.html" class="open">COMPANY</a></li>
+                  <li><a href="#">LIBRARY</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+                  <li><a class="grey" href="#">EN<i class="fas fa-sort-down"></i></a>
+                    <ul class="drop">
+                      <li>EN</li>
+                      <li>FR</li>
+                      <li>UN</li>
+                      <li>RO</li>
+                    </ul>
+                  </li>
+                  <li><a class="grey " href="#">$US<i class="fas fa-sort-down"></i></a>
+                    <ul class="drop">
+                      <li>$US</li>
+                      <li>EUR</li>
+                      <li>UAH</li>
+
+                    </ul>
+                  </li>
+                  <div class="nav-bottom">
+                    <ul>
+                      <li><a class="grey" href="/contact"><i class="fas fa-search"></i></a></li>
+                      <li><a class="grey" href="/contact" id="contact" onclick="toggle()"><i
+                            class="far fa-user"></i></a></li>
+                      <li><a class="grey" href="/contact"><i class="far fa-heart"></i></a></li>
+                      <li><a class="grey" href="/con" id="con" onclick="toggle()"><i
+                            class="fas fa-shopping-bag"></i></a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <!--Services-->
+    <div class="row popular-wrapper">
+      <div class="column sm-12">
+        <section class="cards">
+          <div class="row">
+            <div class="breadcrumbs column sm-12">
+              <ul>
+                <li><a href="/index.html">
+                    <p>Home</p>
+                  </a></li>
+                <li><a class="active">
+                    <p>Category Landing Services</p>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="title">
+            <h2>Services</h2>
+          </div>
+
+          <div class="row filter" id="red">
+            <div class="row  ">
+              <div class=" filter-content col sm-4 ">
+                <div class="select">
+                  <h1>Price</h1>
+                  <select name="format" id="format">
+                     <option selected disabled>$0.00--$100.00</option>
+                     <option value="pdf">$100.00--$500.00</option>
+                     <option value="txt">$500.00--$1000.00</option>
+                    
+                  </select>
+               </div>
+
+              </div>
+              <div class="filter-content col sm-4">
+                <div class="select">
+                  <h1>Brands</h1>
+                  <select name="format" id="format">
+                     <option selected disabled>Finibus</option>
+                     <option value="pdf">Bonorum</option>
+                     <option value="txt">Cicero</option>
+                    
+                  </select>
+               </div>
+              </div>
+              <div class="filter-content col sm-4">
+                <div class="select">
+                  <h1>Size</h1>
+                  <select name="format" id="format">
+                     <option selected disabled>Small</option>
+                     <option value="pdf">Medium</option>
+                     <option value="txt">Large</option>
+                    
+                  </select>
+               </div>
+              </div>
+
+
+            </div>
+            <div class="row" >
+              <div class="filter-content col sm-4">
+                <div class="select">
+                  <h1>Color</h1>
+                  <div id="red" class="red">
+                  <ul  class="change-color">
+                    <li><a href="#" style="background:#ffffff"></a></li>
+                    <li><a href="#" style="background:#43c0cf"></a></li>
+                    <li><a href="#" style="background:#66685b"></a></li>
+                    <li><a href="#" style="background:#4aaf00"></a></li>
+                    <li><a href="#" style="background:#ec6115"></a></li>
+                    <li><a href="#" style="background:#dc041d"></a></li>
+                    <li><a href="#" style="background:#efead7"></a></li>
+                  </ul>
+
+                </div>
+                 
+
+               </div>
+              </div>
+              <div class="filter-content col sm-4">
+                <div class="select">
+                  <h1>Sort by</h1>
+                  <select name="format" id="format">
+                     <option selected disabled>Price</option>
+                     <option value="pdf">Brands</option>
+                     <option value="txt">Size</option>
+                    
+                  </select>
+               </div>
+              </div>
+              <div class="filter-content col sm-4">
+               <div class="select">
+                  <h1>Show</h1>
+                  <select name="format" id="format">
+                     <option selected disabled>4 per page</option>
+                     <option value="pdf">8 per page</option>
+                     <option value="txt">12 per page</option>
+                    
+                  </select>
+               </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="content-cards popular-carousel row">
+            <div class="shows column sm-12 md-4 lg-3 active">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
+                  <div class="card__readmore">$ 799.55</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/strategy.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/check.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
+                  <div class="card__readmore">$129.55</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Coctail Table Walnut YES</div>
+
+                  <div class="card__readmore">$299.88</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/chair.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/shampoo.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/notfound.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/hand.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/notfound.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/notfound.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/kayboard.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/grafic.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="shows column sm-12 md-4 lg-3">
+              <a href="#" class="card">
+                <div class="card__image" style="background-image: url('/public/notfound.png')"></div>
+                <div class="card__content">
+                  <div class="card__title">Best place to travel in the fall</div>
+
+                  <div class="card__readmore">Read More</div>
+                </div>
+              </a>
+            </div>
+            <button class="btn btn-danger center-block loadMore">LOAD MORE <i
+                class="fas fa-chevron-circle-down"></i></button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <!--Featured Products-->
+    <div class="row">
+      <div class="column sm-12 md-12 lg-12">
+        <section class="featured">
+          <div class="text-title">
+            <div class="title-featured">
+              <h1>Featured Products</h1>
+            </div>
+            <p>Unde omnis iste natus sit voluptatem</p>
+            <div class="slide-bar">
+              <h2>///</h2>
+            </div>
+          </div>
+
+          <div class="carousel owl-carousel">
+            <a href="#" class="card" id="c1">
+              <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
+
+                <div class="card__green">Awesome</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c2">
+              <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
+
+                <div class="card__green">Marketing</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c3">
+              <div class="card__image" style="background-image: url('/public/hand.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
+
+                <div class="card__green">Awesome</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c4">
+              <div class="card__image" style="background-image: url('/public/sales.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Coctail Table Walnut YES</div>
+
+                <div class="card__green">Marketing</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c5">
+              <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Best place to travel in the fall</div>
+
+                <div class="card__green">Awesome</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c6">
+              <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Best place to travel in the fall</div>
+
+                <div class="card__green">Marketing</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c7">
+              <div class="card__image" style="background-image: url('/public/sales.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Best place to travel in the fall</div>
+
+                <div class="card__green">Awesome</div>
+              </div>
+            </a>
+
+            <a href="#" class="card" id="c8">
+              <div class="card__image" style="background-image: url('/public/hand.png')"></div>
+              <div class="card__content">
+                <div class="card__title">Best place to travel in the fall</div>
+
+                <div class="card__green">Marketing</div>
+              </div>
+            </a>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <!--Cookie-->
+    <div class="overlay"></div>
+    <div class="cookie-container" id="dialog">
+      <button class="  close-btns " id="exit"><i class="fas fa-times"></i> </button>
+      <h1>This website uses cookies</h1>
+      <p>
+        OSF uses its own and third-part cookies for statistical purposes, to know your preferencess, for website
+        performance and interactions with social media offering publicity tailored to your interest.If you continue
+        browsing , we consider that you accept its use.You can expand this information consulting our
+        <a href="#">Cookies Policy Page.</a>
+      </p>
+      <button class="cookie-btn" id="exit">Accept </button>
+    </div>
+
+    <!--Login-->
+    <div class="login pop" id="blur">
+      <header>Sign in</header>
+      <form action="#" class="login-content">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="Email Address">
+            <i class="icon fas fa-envelope"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">Email can't be blank</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="Password">
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+            <i class="eye" id="visibilityBtn"><span id="icon" class="material-icons"></span></i>
+          </div>
+          <div class="error error-txt">Password can't be blank</div>
+        </div>
+        <div class="pass-txt"><a href="#">Forgot password?</a></div>
+        <input type="submit" class="submit" value="Login">
+      </form>
+      <div class="sign-txt"> <a href="#">I don't have an acount</a></div>
+    </div>
+
+
+
+   
+
+    <!--Footer-->
+    <div class="row">
+      <footer class="footer stycky-footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col ">
+              <ul>
+                <h4><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
+                <li><a href="javascript:void();">
+                    <h4>CONTACT <i class="fas fa-sort-down"></i></h4>
+                  </a>
+                  <ul class="dropdown-menu list-black">
+                    <li><a href="#">Headquarters:5600, Blvd. des Galeries, Bur 530 Quebec, Quebec G2K 2H6</a></li>
+                    <li><a href="#">contact@osf-global.com</a></li>
+                    <li><a href="#">+1(888)548-4344</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li><a href="javascript:void();">
+                    <h4>CATEGORIES <i class="fas fa-sort-down"></i></h4>
+                  </a>
+                  <ul class="dropdown-menu long">
+                    <li><a href="#">Alcohol</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Drinks</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Kids & Baby</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Motorcycle</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toys</a></li>
+                    <li><a href="#">Travel</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li><a href="javascript:void();"></a>
+                  <h4>ABOUT<i class="fas fa-sort-down"></i></h4></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Abous us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Js  Popular-->
+  <script src="/js/services.js"></script>
+
+  <!-- Js Featured Products-->
+  <script src="/js/featured.js"></script>
+
+  <!-- Js cookie-->
+  <script src="/js/cookie.js"></script>
+
+  <!--Js Login-->
+  <script src="/js/login.js"></script>
 
 
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-

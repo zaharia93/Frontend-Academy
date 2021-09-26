@@ -13,9 +13,19 @@ var init = function( ) {
   $(".slide-dot").on("click", function() {
     var $this = $(this);
      changeSlide($(this).index());
-    
-    console.log("qwe");
   });
+
+  // $(".img-slider").on("swipeleft", function() {
+  //   var activeSlide = $(this).find(".slide.active");
+  //   changeSlide(activeSlide.index() + 1);
+  //   console.log("here");
+  // });
+
+  // $(".img-slider").on("swiperight", function() {
+  //   var activeSlide = $(this).find(".slide.active");
+  //   changeSlide(activeSlide.index() + 1);
+  //   console.log("here");
+  // });
 };
 
 $(document).ready(function(){

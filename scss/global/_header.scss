@@ -2,7 +2,7 @@
 @import "../global/mixins";
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
@@ -288,6 +288,7 @@ nav {
        
 
         @include breakpoint("md") {
+          position: fixed;
           left: 0;
           opacity: 0;
           visibility: hidden;
@@ -305,24 +306,20 @@ nav {
         // }
 
         .img-cast {
-          width: 75%;
+          width: 90%;
           border-radius: 10px;
           margin-bottom: 15px;
 
           @include breakpoint("md") {
             margin-top: 50px;
-            width: 23%;
-            height: 23%;
+            height: auto;
           }
         }
 
         .row {
-          width: 100%;
           margin-bottom: 15px;
           display: flex;
-          text-align: left;
-          padding: 30px;
-          
+          text-align: left;  
 
           .row-mega-links-trigger {
             &:hover {
@@ -398,7 +395,7 @@ nav {
   background: #242526;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3a3b3c;
+  background: #87898a;
 }
 #menu-btn:checked ~ .nav-links {
   left: 0;
