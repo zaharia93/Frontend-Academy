@@ -1,40 +1,51 @@
 // Header
 @import "global/header";
 
-// // // Footer
+ // Footer
 @import "global/footer";
 
-// // Components
-@import "components/carousel";
-
-// // // Popular
-@import "components/popular";
-
-// //Banner
-@import "components/banner";
-
-// //Featured
+ //Featured
 @import "components/featured";
 
-// // // 404
- @import "components/404";
+// Popular
+@import "components/popular";
 
+ //Featured
+@import "components/breadcrumbs";
 
-// // //Cookie
+//Banner
+@import "components/banner";
+
+// Components
+@import "components/carousel";
+
+//Cookie
 @import "components/cookie";
 
-
-// // //Login
+//Login
 @import "components/login";
 
-// //Benefit
+//Benefit
 @import "components/benefit";
 
+// Settings
+@import "global/settings";
+
+//Mixins
+@import "global/mixins";
+
+//404 Page
+ @import "components/404";
+
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";// //Featured
+// @import "components/featured";
 
 
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
-// @import "components/404";
+
+
+
+

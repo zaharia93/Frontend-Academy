@@ -3,6 +3,13 @@
 	position:sticky;
 	top:100%;
 }
+.container .row .footer-col  .long{
+	column-count: 3;
+	column-fill: auto;
+	margin-right: 50px;
+	width: 220px;
+
+}
 
 .container{
 	max-width: 1280px;
@@ -22,7 +29,8 @@ ul{
 }
 .footer-col{
    width: 15%;
-   padding: 0 15px;
+   padding: 0 45px;
+   column-fill: auto;
 }
 .footer-col h4 {
 	font-size: 14px;
@@ -45,6 +53,7 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
@@ -72,7 +81,7 @@ ul{
 
 /*responsive*/
 
-@media(max-width: 574px){
+@media(max-width: 768px){
 	.footer{
 		padding: 20px 0;
 	}
@@ -104,7 +113,6 @@ ul{
 .footer-col ul li:hover .dropdown-menu{
 	top: 100%;
 	display: block;
-	
 	margin-bottom: 5px;
 }
 .footer-col ul li:hover .dropdown-menu ul{
