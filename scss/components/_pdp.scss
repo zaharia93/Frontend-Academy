@@ -1,0 +1,241 @@
+.card-wrapper {
+  //   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  @include breakpoint("md") {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include breakpoint("md") {
+      flex-direction: row;
+    }
+
+    .product-imgs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include breakpoint("md") {
+        flex-direction: row;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .img-display {
+        overflow: hidden;
+
+        .img-showcase {
+          display: flex;
+          width: 100%;
+          transition: all 0.5s ease;
+          margin: 0.15rem;
+
+          img {
+            min-width: 100%;
+          }
+        }
+      }
+      .img-select {
+        display: flex;
+        @include breakpoint("md") {
+          flex-direction: column;
+        }
+
+        .img-item {
+          margin: 0.1rem;
+
+          &:nth-child(1),
+          :nth-child(2),
+          :nth-child(3) {
+            margin-right: 0;
+          }
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .product-content {
+      padding-top: 0;
+
+      .product-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        position: relative;
+        color: #45413e;
+        margin: 1rem 0;
+        text-align: center;
+
+        @include breakpoint("md") {
+          font-size: 3rem;
+        }
+      }
+      .product-detail {
+        p {
+          font-size: 0.9rem;
+          padding: 0.3rem;
+          opacity: 0.8;
+        }
+        .show-read-more {
+          .read-more {
+            color: #84bc22;
+            text-decoration: none;
+          }
+          .more-text {
+            display: none;
+          }
+        }
+      }
+      .purchase-info {
+        margin: 1.5rem 0;
+
+        input,
+        .btn {
+          border: 1.5px solid #ddd;
+          border-radius: 25px;
+          text-align: center;
+          padding: 0.45rem 0.8rem;
+          outline: 0;
+          margin-right: 0.2rem;
+          margin-bottom: 1rem;
+        }
+
+        input {
+          width: 60px;
+        }
+
+        .btn {
+          cursor: pointer;
+          color: #fff;
+
+          &:last-of-type {
+            background: #84bc22;
+          }
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+
+        p {
+          color: #b3b3b3;
+        }
+        a {
+          display: inline-block;
+          height: 40px;
+          width: 25px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 10px 10px 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #b3b3b3;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: #24262b;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .breds {
+    .title {
+      position: relative;
+      h2 {
+        font-size: 25px;
+        padding: 20px;
+        color: #45413e;
+        text-align: center;
+        @include breakpoint("md") {
+          font-size: 45px;
+        }
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        height: 2px;
+        background: #f9f6f5;
+        width: 45%;
+        top: 50%;
+        left: 68vh;
+      }
+      h2::before {
+        content: "";
+        position: absolute;
+        margin: auto;
+        height: 2px;
+        background: #f9f6f5;
+        width: 45%;
+        top: 50%;
+        right: 68vh;
+      }
+    }
+    .breadcrumbs {
+      display: flex;
+
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+
+          &:after {
+            content: "/";
+            font-size: 15px;
+            color: #2c3e50;
+            transform: translateY(-30%);
+            margin: 5px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+
+            &:after {
+              display: none;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            display: flex;
+            width: 100%;
+            text-align: center;
+            color: #85c441;
+            font-size: 13px;
+
+            &:hover {
+              color: #718b0e;
+            }
+
+            &.active {
+              color: #45413e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
