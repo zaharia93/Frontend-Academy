@@ -1,9 +1,15 @@
+.container-pdp{
+  background-color: #f1edea;
+}
+
 .card-wrapper {
-  //   height: 100vh;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  background-color: #fff;
+ 
 
   @include breakpoint("md") {
     width: 100%;
@@ -40,6 +46,7 @@
         .img-showcase {
           display: flex;
           width: 100%;
+          height: auto;
           transition: all 0.5s ease;
           margin: 0.15rem;
 
@@ -50,12 +57,22 @@
       }
       .img-select {
         display: flex;
+        width: inherit;
+        justify-content: space-around;
+
         @include breakpoint("md") {
           flex-direction: column;
         }
 
+        
         .img-item {
-          margin: 0.1rem;
+          margin: 4px;
+          width: 100%;
+          border: 1px solid #45413e;
+          
+          &.selected-img {
+            border: 1px solid #84bc22;
+          }
 
           &:nth-child(1),
           :nth-child(2),

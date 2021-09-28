@@ -12,10 +12,13 @@
 }
 
 .cookie-container {
-  width: 97%;
+  width: 88%;
+  left: 7%;
+  right: 7%;
+  bottom: 50px;
   text-align: right;
   display: none;
-  position: relative;
+  position: absolute;
   background: #fff;
   color: #141414;
 

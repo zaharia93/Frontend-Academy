@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container container-pdp">
         <!--Navbar-->
         <div class="row">
             <div class="column sm-12">
@@ -189,25 +189,17 @@
                         </div>
                     </div>
                     <div class="img-select">
-                        <div class="img-item">
-                            <a href="#" data-id="1">
-                                <img src="/public/PG.10216885.JJ169XX.PZ.jpg" alt="shoe image">
-                            </a>
+                        <div class="img-item selected-img" data-id="1">
+                            <img src="/public/PG.10216885.JJ169XX.PZ.jpg" alt="shoe image">
                         </div>
-                        <div class="img-item">
-                            <a href="#" data-id="2">
-                                <img src="/public/PG.10216885.JJ169XX.BZ.jpg" alt="shoe image">
-                            </a>
+                        <div class="img-item" data-id="2">
+                            <img src="/public/PG.10216885.JJ169XX.BZ.jpg" alt="shoe image">
                         </div>
-                        <div class="img-item">
-                            <a href="#" data-id="3">
-                                <img src="/public/PG.10216885.JJ8UTXX.PZ.jpg" alt="shoe image">
-                            </a>
+                        <div class="img-item " data-id="3">
+                            <img src="/public/PG.10216885.JJ8UTXX.PZ.jpg" alt="shoe image">
                         </div>
-                        <div class="img-item">
-                            <a href="#" data-id="4">
-                                <img src="/public/PG.10216885.JJ8UTXX.BZ.jpg" alt="shoe image">
-                            </a>
+                        <div class="img-item" data-id="4">
+                            <img src="/public/PG.10216885.JJ8UTXX.BZ.jpg" alt="shoe image">
                         </div>
                     </div>
                 </div>
@@ -257,27 +249,132 @@
                     <label for="tabfree">Description</label>
                     <div class="tab">
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                
+
                     <input type="radio" id="tabsilver" name="mytabs">
                     <label for="tabsilver">Additional Information</label>
                     <div class="tab">
-                     
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
-                
+
                     <input type="radio" id="tabgold" name="mytabs">
                     <label for="tabgold">Reviews(3)</label>
                     <div class="tab">
-                      
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
-                
-                  </div>
+
+                </div>
 
 
+            </div>
+        </div>
+
+        <!--Popular Items-->
+        <div class="row">
+            <div class="column sm-12 md-12 lg-12">
+                <section class="featured">
+                    <div class="text-title">
+                        <div class="title-featured">
+                            <h1>POPULAR ITEMS</h1>
+                        </div>
+                        <p>Unde omnis iste natus sit voluptatem</p>
+                        <div class="slide-bar">
+                            <h2>///</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel owl-carousel">
+                        <a href="/components/pdp.html" class="card" id="c1">
+                            <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Kristina Dam Oak Table With Wite Marble Top</div>
+
+                                <div class="card__green">Awesome</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c2">
+                            <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Hay-About A Lounge Chair AAL 93</div>
+
+                                <div class="card__green">Marketing</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c3">
+                            <div class="card__image" style="background-image: url('/public/hand.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Activate Facial Mask and Charcoal Soap</div>
+
+                                <div class="card__green">Awesome</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c4">
+                            <div class="card__image" style="background-image: url('/public/sales.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Coctail Table Walnut YES</div>
+
+                                <div class="card__green">Marketing</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c5">
+                            <div class="card__image" style="background-image: url('/public/magazin.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Best place to travel in the fall</div>
+
+                                <div class="card__green">Awesome</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c6">
+                            <div class="card__image" style="background-image: url('/public/calendar.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Best place to travel in the fall</div>
+
+                                <div class="card__green">Marketing</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c7">
+                            <div class="card__image" style="background-image: url('/public/sales.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Best place to travel in the fall</div>
+
+                                <div class="card__green">Awesome</div>
+                            </div>
+                        </a>
+
+                        <a href="/components/pdp.html" class="card" id="c8">
+                            <div class="card__image" style="background-image: url('/public/hand.png')"></div>
+                            <div class="card__content">
+                                <div class="card__title">Best place to travel in the fall</div>
+
+                                <div class="card__green">Marketing</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
             </div>
         </div>
 
@@ -363,6 +460,9 @@
 
     <!--Js  Product Detail-->
     <script src="/js/pdp.js"></script>
+
+    <!--Js  Featured-->
+    <script src="/js/featured.js"></script>
 
 
 

@@ -63,7 +63,6 @@ nav {
       cursor: pointer;
       display: flex;
       line-height: 1.3;
-      margin-left: 90px;
 
       @include breakpoint("md") {
         padding: 10px 20px;
@@ -73,6 +72,7 @@ nav {
       .logo {
         flex-wrap: wrap;
         visibility: hidden;
+        margin:0;
 
         @include breakpoint("md") {
           visibility: visible;
@@ -95,16 +95,17 @@ nav {
 
       .img-logo {
         border-radius: 50%;
+        margin: 0;
       }
     }
 
     .nav-links {
       position: fixed;
       top: 65px;
-      left: -105%;
+      left: 0;
       background: #262a33;
       box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
-      display: block;
+      display: none;
       overflow-y: auto;
       padding: 5px;
       transition: all 0.3s ease;
@@ -128,6 +129,9 @@ nav {
 
       }
 
+      &.mobile-nav-active {
+        display: block;
+      }
 
       .grey {
         color: #bdbdbd;
@@ -138,6 +142,10 @@ nav {
         border: #fff;
         background: red;
         padding: 15px;
+
+        &:hover ul li {
+        display: block;
+        }
       }
 
 
@@ -149,8 +157,6 @@ nav {
         }
       }
 
-     
-
       .desktop-item {
         display: none;
       }
@@ -159,7 +165,6 @@ nav {
         display: block;
         color: #f2f2f2;
         font-size: 20px;
-        font-weight: 500;
         padding-left: 20px;
         cursor: pointer;
         border-radius: 5px;
@@ -204,16 +209,16 @@ nav {
           font-weight: 600;
           padding: 10px 0;
           transition: all 0.3s ease;
-          
+          border-bottom: 7px solid transparent;
 
           &:hover {
-            background: #262a32;
+            // background: #262a32;
             border-bottom: 7px solid #a1cc55;
             color: #fff;
           }
 
           @include breakpoint("md") {
-            color: #45413e;
+            color: #45413e;            //?
             padding: 20px 15px;
             
           }
@@ -259,18 +264,21 @@ nav {
             opacity: 1;
             visibility: visible;
             
-          }
-        }
-
-
-        li a {
-          @include breakpoint("md") {
-            width: 100%;
-            display: block;
-            font-weight: 400;
             
           }
         }
+        li{
+      border-bottom: rgb(226, 22, 39);
+
+       a {
+          @include breakpoint("md") {
+            width: 100%;
+            display: block;
+            
+            
+          }
+        }
+      }
       }
 
       .mega-box {
@@ -295,15 +303,16 @@ nav {
           justify-content: center;
         }
 
-        // &:hover {
-        //   @include breakpoint("md") {
-        //     transition: all 0.3s ease;
-        //     top: 70px;
-        //     opacity: 1;
-        //     visibility: visible;
+        &:hover {
+          @include breakpoint("md") {
+            transition: all 0.3s ease;
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+            border-bottom: none;
             
-        //   }
-        // }
+          }
+        }
 
         .img-cast {
           width: 90%;
@@ -321,19 +330,20 @@ nav {
           display: flex;
           text-align: left;  
 
-          .row-mega-links-trigger {
-            &:hover {
-              .mega-links,
-              .mega-links ul {
-                display: block;
-                flex-direction: column;
-               
+          li{
+            a{
+              padding: 5px;
+              color: #fff;
+              font-size: 17px;
+              display: block;
+              border-bottom: none;
+
+              &:hover{
+                color: #84bc22;
               }
             }
           }
-          
-          
-  
+
             @include breakpoint("md") {
               margin-top: 0;
               text-align: center;
@@ -426,6 +436,11 @@ nav {
   font-size: 45px;
   font-weight: 600;
 }
+
+
+
+
+
 
 // @media (min-width: 768px) {
 //   nav {
