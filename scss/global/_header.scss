@@ -13,11 +13,11 @@ nav {
   flex: 0 0 100%;
   width: 100%;
   background: #ffff;
-  border-bottom: 1px solid #e8e2d6;
+  border-bottom: 2px solid #e8e2d6;
   //position: fixed;
 
   @include breakpoint("md") {
-    border: none;
+    
     z-index: 20;
     height: 75px;
   }
@@ -72,7 +72,7 @@ nav {
       .logo {
         flex-wrap: wrap;
         visibility: hidden;
-        margin:0;
+        margin: 0;
 
         @include breakpoint("md") {
           visibility: visible;
@@ -112,9 +112,11 @@ nav {
       z-index: 3;
       height: 80vh;
       width: 100%;
-      
+      flex-direction: column;
+
       @include breakpoint("md") {
         position: relative;
+        flex-direction: row;
         top: 0;
         left: 0;
         background: transparent;
@@ -126,11 +128,11 @@ nav {
         align-items: center;
         height: auto;
         width: auto;
-
       }
 
       &.mobile-nav-active {
         display: block;
+        
       }
 
       .grey {
@@ -140,19 +142,28 @@ nav {
       .drop {
         display: none;
         border: #fff;
-        background: red;
+        background: #262a33;
         padding: 15px;
+        justify-content: center;
+        text-align: center;
+        width:45px;
+        
 
-        &:hover ul li {
-        display: block;
+      }
+      li{
+        &:hover .drop{
+          display: block;
+          position: absolute;
+          color: #fff;
         }
       }
 
 
+
       .nav-bottom ul {
-        display: block;
-      
-        @include breakpoint("md"){
+        display:none;
+
+        @include breakpoint("md") {
           display: inline-flex;
         }
       }
@@ -180,25 +191,22 @@ nav {
         list-style: none;
         color: #fff;
 
-        
-
         @include breakpoint("md") {
           margin: 0;
           color: #fff;
-          
+
           &:hover .drop-menu,
-          &:hover .mega-box{
+          &:hover .mega-box {
             top: 70px;
             opacity: 1;
             visibility: visible;
             display: flex;
             flex-direction: row;
-            
-          i{
-            display: none;
+
+            i {
+              display: none;
+            }
           }
-          }
-          
         }
 
         a {
@@ -206,25 +214,29 @@ nav {
           color: #fff;
           text-decoration: none;
           font-size: 13px;
-          font-weight: 600;
           padding: 10px 0;
           transition: all 0.3s ease;
           border-bottom: 7px solid transparent;
 
           &:hover {
-            // background: #262a32;
-            border-bottom: 7px solid #a1cc55;
-            color: #fff;
+            background: #262a32;
+            border-bottom:none;
+            color:#84bc22 ;
+            
+            @include breakpoint("md"){
+              color: #fff;
+              border-bottom: 7px solid #a1cc55;
+
+            }
           }
 
           @include breakpoint("md") {
-            color: #45413e;            //?
+            color: black;
             padding: 20px 15px;
-            
           }
         }
       }
-    
+
       .drop-menu {
         position: static;
         opacity: 1;
@@ -236,7 +248,7 @@ nav {
         overflow: hidden;
         box-shadow: none;
         transition: all 0.3s ease;
-        
+
         // position: absolute;
         // background: #262a33;
         // width: 180px;
@@ -255,64 +267,58 @@ nav {
           opacity: 0;
           visibility: visible;
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-          
         }
-        &:hover {
-          @include breakpoint("md") {
-            transition: all 0.3s ease;
-            top: 70px;
-            opacity: 1;
-            visibility: visible;
-            
-            
-          }
-        }
-        li{
-      border-bottom: rgb(226, 22, 39);
+        // &:hover {
+        //   @include breakpoint("md") {
+        //     transition: all 0.3s ease;
+        //     top: 70px;
+        //     opacity: 1;
+        //     visibility: visible;
 
-       a {
-          @include breakpoint("md") {
-            width: 100%;
-            display: block;
-            
-            
+        //   }
+        // }
+        li {
+          // border-bottom: rgb(226, 22, 39);
+
+          a {
+            @include breakpoint("md") {
+              width: 100%;
+              display: block;
+            }
           }
         }
-      }
       }
 
       .mega-box {
-        position: absolute;
-        top: 85px;
-        // opacity: 1;
-        visibility: visible;
+        top: 55px;
+        opacity: 1;
         background: #262a33;
-        padding: 20px 20px 0 20px;
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 100%;
         justify-content: space-between;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-       
+        
 
         @include breakpoint("md") {
+          
           position: fixed;
           left: 0;
           opacity: 0;
-          visibility: hidden;
+          display: none;
           justify-content: center;
         }
 
-        &:hover {
-          @include breakpoint("md") {
-            transition: all 0.3s ease;
-            top: 70px;
-            opacity: 1;
-            visibility: visible;
-            border-bottom: none;
-            
-          }
-        }
+        // &:hover {
+        //   @include breakpoint("md") {
+        //     transition: all 0.3s ease;
+        //     top: 70px;
+        //     opacity: 1;
+        //     visibility: visible;
+        //     border-bottom: none;
+
+        //   }
+        // }
 
         .img-cast {
           width: 90%;
@@ -328,35 +334,53 @@ nav {
         .row {
           margin-bottom: 15px;
           display: flex;
-          text-align: left;  
+          text-align: left;
 
-          li{
-            a{
+          li {
+            a {
               padding: 5px;
               color: #fff;
               font-size: 17px;
               display: block;
               border-bottom: none;
 
-              &:hover{
+              &:hover {
                 color: #84bc22;
               }
             }
           }
 
-            @include breakpoint("md") {
-              margin-top: 0;
-              text-align: center;
-           .row-mega-links-trigger{
-            column-count: 3;
-            column-fill: auto;
-      
-           }
+          @include breakpoint("md") {
+            margin-top: 0;
+            text-align: center;
+
+            .row-mega-links-trigger {
+              column-count: 3;
+              column-fill: auto;
+            }
             header {
               font-size: 17px;
               color: #fff;
             }
           }
+          .first-row{
+            margin: 0;
+          }
+          
+          .mega-links{
+
+            display: none;
+            @include breakpoint("md") {
+              display: block;
+            }
+          }
+
+          ul li{
+            &:hover .mega-links{
+              display: block;
+            }
+          }
+
 
           .header {
             margin-left: 15px;
@@ -369,7 +393,11 @@ nav {
               margin-bottom: 0px;
             }
           }
-
+        }
+      } 
+      li {
+        &:hover .mega-box{
+          display: block;
         }
       }
     }
@@ -387,15 +415,13 @@ nav {
 
       .fa-times {
         color: #fff;
-        margin-left: 290px;
+        margin-left: 275px;
         margin-top: 0;
         font-size: 20px;
       }
     }
   }
 }
-
-
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -420,7 +446,7 @@ nav {
 #showDrop:checked ~ .drop-menu,
 #showMega:checked ~ .mega-box {
   max-height: 100%;
-  margin:0;
+  margin: 0;
 }
 
 .body-text {
@@ -436,37 +462,3 @@ nav {
   font-size: 45px;
   font-weight: 600;
 }
-
-
-
-
-
-
-// @media (min-width: 768px) {
-//   nav {
-    
-    
-    
-
-
-  
-
-//     .row .mega-links li {
-//       padding: 0 20px;
-//       text-align: center;
-//     }
-//     .row .mega-links li a {
-//       padding: 0px;
-//       color: #ffffff;
-//       font-size: 14px;
-//       display: block;
-//       border-bottom: none;
-//     }
-//     .row .mega-links li a:hover {
-//       color: white;
-//     }
-
-//   }
- 
-  
-// }

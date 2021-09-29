@@ -50,6 +50,8 @@
 
           @include breakpoint("md") {
             font-size: 38px;
+            text-align: center;
+            justify-content: center;
           }
         }
         p {
@@ -67,16 +69,19 @@
         .btns {
           text-align: center;
           display: inline-block;
-          text-decoration: none;
-
+          // text-decoration: none;
           border: 2px solid #a2a09e;
-          color: #fff;
           font-size: 14px;
           font-weight: 500;
           padding: 10px 25px;
           border-radius: 25px;
           transition: all 0.3s ease;
           width: 150px;
+
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
         }
       }
       img {
@@ -90,7 +95,7 @@
       }
     }
     .navigation {
-      z-index: 2;
+      z-index: 1;
       position: absolute;
       display: flex;
       bottom: 30px;

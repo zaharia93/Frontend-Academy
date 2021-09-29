@@ -1,6 +1,6 @@
 
   .login{
-    width: 450px;
+    width: 80%;
     display: none;
     background: #fff;
     border-radius: 5px;
@@ -152,17 +152,3 @@
   color: #bfbfbf;
 }
  
-@media ( max-width:768px){
-
-.login{
-  width: 300px;
-  margin-left: 10px;
-  
-  top: -50rem;
-  header{
-  }
- 
-  
-}
-
-}
