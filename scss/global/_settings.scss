@@ -1,5 +1,14 @@
 @import "../global/mixins";
 
+$white: #fff;
+$main-color: #a1cc55;
+$dark-main-color: #84bc22;
+$light-bg: #e8e2d6;
+$light-grey: #b3b3b3;
+$light-dark-grey: #87898a;
+$dark-grey: #24262b;
+$dark-grey-2: #45413e;
+
 // settings.scss
 .container {
   position: relative;
@@ -36,9 +45,8 @@
     }
 
     &-4 {
-      width: 100%;
-      // width: calc(33.33% - 20px);
-      // padding: 0 10px;
+      width: calc(33.33% - 20px);
+      padding: 0 10px;
     }
 
     &-5 {
@@ -48,8 +56,8 @@
     }
 
     &-6 {
-      // width: calc(50% - 20px);
-      // padding: 0 10px;
+      width: calc(50% - 20px);
+      padding: 0 10px;
     }
 
     &-7 {
@@ -77,10 +85,8 @@
       padding: 0 10px;
     }
 
-    $padding: 10px;
-
     &-12 {
-      width: calc(100% - #{$padding * 2});
+      width: calc(100% - 20px);
       padding: 0 10px;
     }
   }

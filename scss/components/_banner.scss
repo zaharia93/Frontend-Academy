@@ -1,40 +1,39 @@
+@import "../global/settings";
 
+.banner-area {
+  margin-left: 0;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-image: url(../public/banner.png);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
 
-.banner-area{
-    margin-left: 0;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    position: relative;
-    background-image: url(../public/banner.png);
-    background-size: cover;
-    background-position: center center;
+  h1 {
+    margin-top: 25px;
     text-align: center;
-    
-    h1{
-        margin-top: 25px;
-        text-align: center;
-        font-size: 34px;
-        color: #fff;
-        padding: 3rem;
-        
-        @include breakpoint("md") {
-            font-size: 40px;
-        }
-    } 
-    h2{
-            color: #fff;
-            font-size: 14px;
-            padding: 3rem;
-            font-weight: normal;
+    font-size: 34px;
+    color: $white;
+    padding: 3rem;
 
-            @include breakpoint("md") {
-                font-size: 17px;
-            }
-        }
+    @include breakpoint("md") {
+      font-size: 40px;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: 14px;
+    padding: 3rem;
+    font-weight: normal;
+
+    @include breakpoint("md") {
+      font-size: 17px;
+    }
+  }
 }
-
-

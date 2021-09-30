@@ -1,26 +1,25 @@
-.popular-wrapper {
+@import "../global/settings";
+
+.cards {
   background-color: #262a32;
-}
+  margin-top: 15px;
+  padding: 15px 10px;
+  width: calc(100% - 20px);
 
-.cards{
-   margin-left: 1px;
-   margin-top: 15px;
-   padding: 15px;
-
-   .content-cards {
+  .content-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
-    
-    .shows{
+
+    .shows {
       display: none;
       margin: 10px 0;
       position: relative;
 
-      .overlay-content{
+      .overlay-content {
         position: absolute;
-        
+
         top: 0;
         left: 0;
         width: 100%;
@@ -31,35 +30,38 @@
         justify-content: center;
         opacity: 0;
         transition: opacity 0.25s;
-        .fas{
+
+        .fas {
           display: flex;
           font-size: 30px;
           padding: 15px;
         }
-        .plus{
+
+        .plus {
           display: flex;
-          color:#23c46e;
+          color: #23c46e;
           padding: 10px;
           border-radius: 50%;
-          border-color: #fff;
-          
+          border-color: $white;
         }
-        .love{
+
+        .love {
           margin-left: 20px;
           padding: 10px;
           color: #e73c68;
           border-radius: 50%;
-          border-color: #fff;
+          border-color: $white;
         }
 
         & > * {
           transform: translateY(40px);
           transition: transform 0.25s;
-          }
-         &  > * {
+        }
+        & > * {
           transform: translateY(0);
         }
-        &:hover{
+
+        &:hover {
           opacity: 1;
         }
       }
@@ -71,20 +73,19 @@
         max-height: 350px;
         min-height: 350px;
         overflow: hidden;
-        background: #ffffff;
+        background: $white;
         color: #000000;
         border-radius: 5px;
-        box-shadow: 3px 2px 14px rgba(255,255,255,0.2);
+        box-shadow: 3px 2px 14px rgba(255, 255, 255, 0.2);
         text-decoration: none;
         font-size: 1rem;
         transition: all 200ms ease-in-out;
-        
-      
+
         &:hover {
           transform: translateY(-1rem);
-          box-shadow: 2px 3px 18px rgba(255,255,255,0.4);
+          box-shadow: 2px 3px 18px rgba(255, 255, 255, 0.4);
         }
-      
+
         &__image {
           flex: 0 0 250px;
           background-size: cover;
@@ -92,63 +93,63 @@
           background-position: center center;
           width: 100%;
         }
-      
+
         &__content {
           display: flex;
           flex-direction: column;
           height: 100%;
           padding: 1rem;
-    
         }
-      
+
         &__title {
           font-size: 17px;
-          
+
           margin-bottom: 0.5rem;
           text-align: center;
-          color:#45413e ;
+          color: #45413e;
         }
-      
-        
+
         &__readmore {
           text-align: center;
           margin-top: auto;
-          font-size:17px ;
+          font-size: 17px;
         }
       }
     }
 
-    .loadMore{
-          padding: 25px;
-          line-height: 15px;
-          font-size: 17px;
-          text-align: center;
-          background: #262a32;
-          border-radius: 25px;
-          border: 2px solid #e8e8e8;
-          width:15rem;
-          color: #ffffff;
-          padding: 13px;
-         display: none;
-         
+    .loadMore {
+      padding: 25px;
+      line-height: 15px;
+      font-size: 17px;
+      text-align: center;
+      background: #262a32;
+      border-radius: 25px;
+      border: 2px solid #e8e8e8;
+      width: 15rem;
+      color: $white;
+      padding: 13px;
+      display: none;
+      cursor: pointer;
+      user-select: none;
+
       @include breakpoint("md") {
-      display: block;
-    }     
+        display: block;
+      }
     }
   }
 
-   .title{
-     font-size: 15px;
-     position: relative;
-     padding: 20px;
-     color: #ffffff;
-     text-align: center;
+  .title {
+    font-size: 15px;
+    position: relative;
+    padding: 20px;
+    color: $white;
+    text-align: center;
 
-     @include breakpoint("md") {
+    @include breakpoint("md") {
       font-size: 20px;
     }
 
-     h2::after {
+    h2::after {
       content: "";
       position: absolute;
       margin: auto;
@@ -157,8 +158,9 @@
       width: 25%;
       top: 50%;
       left: 0;
-     }
-     h2::before {
+    }
+    
+    h2::before {
       content: "";
       position: absolute;
       margin: auto;
@@ -167,24 +169,12 @@
       width: 25%;
       top: 50%;
       right: 0;
-     }
-   }
-
-   .owl-prev,
-   .owl-next {
-     display: none;
-   }
-   .owl-carousel{
-
-    .owl-stage-outer{
-
-      // .owl-item{
-      //  // gap: 20px;
-      // }
-      // .owl-item .cloned{
-      //  // gap: 20px;
-      // }
     }
-   }
-}
+  }
 
+  .owl-prev,
+  .owl-next {
+    display: none;
+  }
+  
+}

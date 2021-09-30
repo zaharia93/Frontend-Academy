@@ -1,34 +1,38 @@
+@import "../global/settings";
+
 .mytabs {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 10px 0 0;
+    margin: 30px 0 0;
     
 }
 .mytabs input[type="radio"] {
     display: none;
 }
 .mytabs label {
-    padding: 25px;
-    background: #fff;
+    background: $white;
     font-weight: bold;
     color: #bdc3c7;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 16px 5%;
     
+    @include breakpoint("md") {
+        padding: 16px 10%;
+    }
 }
 
 .mytabs .tab {
     width: 100%;
     padding: 20px;
-    background: #fff;
+    background: $white;
     order: 1;
     display: none;
     background-color: #262a33;
-    color: #fff;
-    
-    
+    color: $white;
 }
+
 .mytabs .tab h2 {
     font-size: 3em;
 }
@@ -39,5 +43,5 @@
 
 .mytabs input[type="radio"]:checked + label {
     background: #262a33;
-    color: #fff;
+    color: $white;
 }

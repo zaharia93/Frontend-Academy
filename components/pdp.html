@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSF Academy</title>
 
+    <link rel="icon" href="/public/logo.ico">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,131 +22,144 @@
 
 <body>
     <div class="container container-pdp">
-        <!--Navbar-->
-        <div class="row">
-            <div class="column sm-12">
-              <nav>
-                <div class="wrapper">
-                  <div class="row">
-                    <div class="column sm-3 md-6 lg-3">
-                      <div class="logo-top">
-                        <img class="img-logo" src="/public/logo.png" alt="">
-                        <div class="logo">
-                          <div class="logo1"><a href="/index.html">OSF</a></div>
-                          <div class="logo2"><a href="/index.html">Academy</a></div>
+    <!--Navbar-->
+    <div class="row white-bg">
+        <div class="column sm-12">
+          <nav class="navigation-wrapper">
+            <div class="wrapper">
+              <div class="row">
+                <div class="column sm-3 md-12 lg-3">
+                  <div class="logo-top">
+                    <a class="logo-anchor" href="/index.html">
+                      <img class="img-logo" src="/public/logo.png" alt="">
+                      <div class="logo">
+                        <div class="logo1">OSF</div>
+                        <div class="logo2">Academy</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column sm-12 lg-7">
+                  <ul class="nav-links">
+                    <span for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></span>
+                    <li>
+                      <a href="#" class="itema selector-anchor">SERVICES<i class="fas fa-sort-down"></i></a>
+                      <div class="mega-box ">
+                        <div class="container">
+                          <div class="row">
+                            <div class="columns sm-12 lg-7 first-row">
+  
+                              <ul>
+                                <li class="row-mega-links-trigger"> <a href="#" class="itema">
+                                    <header>Product Categories<i class="fas fa-sort-down"></i></header>
+                                  </a>
+                                  <ul class="mega-links">
+                                    <li><a href="/components/404.html">Accesories</a></li>
+                                    <li><a href="/components/404.html">Alcohol</a></li>
+                                    <li><a href="/components/404.html">art</a></li>
+                                    <li><a href="/components/404.html">Books</a></li>
+                                    <li><a href="/components/404.html">Drink</a></li>
+                                    <li><a href="/components/404.html">Electronics</a></li>
+                                    <li><a href="/components/404.html">Flowers & Plants</a></li>
+                                    <li><a href="/components/404.html">Food</a></li>
+  
+                                    <li><a href="/components/404.html">Gadgets</a></li>
+                                    <li><a href="/components/404.html">Garden</a></li>
+                                    <li><a href="/components/404.html">Grocery</a></li>
+                                    <li><a href="/components/404.html">Home</a></li>
+                                    <li><a href="/components/404.html">Jewelry</a></li>
+                                    <li><a href="/components/404.html">Kids & Baby</a></li>
+                                    <li><a href="/components/404.html">Men's Fashion</a></li>
+                                    <li><a href="/components/404.html">Mobile</a></li>
+  
+                                    <li><a href="/components/404.html">Motorcycle</a></li>
+                                    <li><a href="/components/404.html">Movies</a></li>
+                                    <li><a href="/components/404.html">Music</a></li>
+                                    <li><a href="/components/404.html">Office</a></li>
+                                    <li><a href="/components/404.html">Pets</a></li>
+                                    <li><a href="/components/404.html">Romantic</a></li>
+                                    <li><a href="/components/404.html">Sport</a></li>
+                                    <li><a href="/components/404.html">Toys</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+  
+                            <div class="column sm-12 lg-2">
+                              <ul>
+                                <li>
+                                  <header>Sale<i class="fas fa-sort-down"></i></header>
+                                  <ul class="mega-links">
+                                    <li><a href="/components/404.html">Accesories</a></li>
+                                    <li><a href="/components/404.html">Alcohol</a></li>
+                                    <li><a href="/components/404.html">art</a></li>
+                                    <li><a href="/components/404.html">Books</a></li>
+                                    <li><a href="/components/404.html">Drink</a></li>
+                                    <li><a href="/components/404.html">Electronics</a></li>
+                                    <li><a href="/components/404.html">Flowers & Plants</a></li>
+                                    <li><a href="/components/404.html">Food</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+  
+                            <div class="column sm-12 lg-3">
+                              <img class="img-cast" src="public/cast.png" alt="">
+                            </div>
+  
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="column sm-12 md-6 lg-9">
-                      <ul class="nav-links">
-                        <span for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></span>
-                        <li>
-                          <a href="#" class="itema">SERVICES<i class="fas fa-sort-down"></i></a>
-                          <div class="mega-box ">
-                            <div class="container">
-                              <div class="row">
-                                <div class="columns sm-12 lg-7 first-row">
-      
-                                  <ul>
-                                    <li class="row-mega-links-trigger"> <a href="#" class="itema">
-                                        <header>Product Categories<i class="fas fa-sort-down"></i></header>
-                                      </a>
-                                      <ul class="mega-links">
-                                        <li><a href="/components/404.html">Accesories</a></li>
-                                        <li><a href="/components/404.html">Alcohol</a></li>
-                                        <li><a href="/components/404.html">art</a></li>
-                                        <li><a href="/components/404.html">Books</a></li>
-                                        <li><a href="/components/404.html">Drink</a></li>
-                                        <li><a href="/components/404.html">Electronics</a></li>
-                                        <li><a href="/components/404.html">Flowers & Plants</a></li>
-                                        <li><a href="/components/404.html">Food</a></li>
-      
-                                        <li><a href="/components/404.html">Gadgets</a></li>
-                                        <li><a href="/components/404.html">Garden</a></li>
-                                        <li><a href="/components/404.html">Grocery</a></li>
-                                        <li><a href="/components/404.html">Home</a></li>
-                                        <li><a href="/components/404.html">Jewelry</a></li>
-                                        <li><a href="/components/404.html">Kids & Baby</a></li>
-                                        <li><a href="/components/404.html">Men's Fashion</a></li>
-                                        <li><a href="/components/404.html">Mobile</a></li>
-      
-                                        <li><a href="/components/404.html">Motorcycle</a></li>
-                                        <li><a href="/components/404.html">Movies</a></li>
-                                        <li><a href="/components/404.html">Music</a></li>
-                                        <li><a href="/components/404.html">Office</a></li>
-                                        <li><a href="/components/404.html">Pets</a></li>
-                                        <li><a href="/components/404.html">Romantic</a></li>
-                                        <li><a href="/components/404.html">Sport</a></li>
-                                        <li><a href="/components/404.html">Toys</a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </div>
-      
-                                <div class="column sm-12 lg-2">
-                                  <ul>
-                                    <li>
-                                      <header>Sale<i class="fas fa-sort-down"></i></header>
-                                      <ul class="mega-links">
-                                        <li><a href="/components/404.html">Accesories</a></li>
-                                        <li><a href="/components/404.html">Alcohol</a></li>
-                                        <li><a href="/components/404.html">art</a></li>
-                                        <li><a href="/components/404.html">Books</a></li>
-                                        <li><a href="/components/404.html">Drink</a></li>
-                                        <li><a href="/components/404.html">Electronics</a></li>
-                                        <li><a href="/components/404.html">Flowers & Plants</a></li>
-                                        <li><a href="/components/404.html">Food</a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </div>
-      
-                                <div class="column sm-12 lg-3">
-                                  <img class="img-cast" src="/public/cast.png" alt="">
-                                </div>
-      
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li><a href="/components/404.html" class="open">COMPANY</a></li>
-                        <li><a href="/components/404.html">LIBRARY</a></li>
-                        <li><a href="/components/404.html">CONTACT US</a></li>
-                        <li><a class="grey" href="#">EN<i class="fas fa-sort-down"></i></a>
-                          <ul class="drop">
-                            <li>EN</li>
-                            <li>FR</li>
-                            <li>UN</li>
-                            <li>RO</li>
-                          </ul>
-                        </li>
-                        <li><a class="grey " href="#">$US<i class="fas fa-sort-down"></i></a>
-                          <ul class="drop">
-                            <li>$US</li>
-                            <li>EUR</li>
-                            <li>UAH</li>
-      
-                          </ul>
-                        </li>
-                        <div class="nav-bottom">
-                          <ul>
-                            <li><a class="grey" href="/components/404.html"><i class="fas fa-search"></i></a></li>
-                            <li><a class="grey" href="/contact" id="contact" onclick="toggle()"><i
-                                  class="far fa-user"></i></a></li>
-                            <li><a class="grey" href="/components/404.html"><i class="far fa-heart"></i></a></li>
-                            <li><a class="grey" href="/components/404.html" id="con" onclick="toggle()"><i
-                                  class="fas fa-shopping-bag"></i></a></li>
-                          </ul>
-                        </div>
+                    </li>
+                    <li><a href="/components/404.html" class="open">COMPANY</a></li>
+                    <li><a href="/components/404.html">LIBRARY</a></li>
+                    <li><a href="/components/404.html">CONTACT US</a></li>
+                    <li class="country-selector">
+                      <a class="selector-anchor grey" href="#">EN<i class="fas fa-sort-down"></i></a>
+                      <ul class="drop">
+                        <li>EN</li>
+                        <li>FR</li>
+                        <li>UN</li>
+                        <li>RO</li>
                       </ul>
-                    </div>
-                  </div>
-                  <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                    </li>
+                    <li class="currency-selector">
+                      <a class="grey selector-anchor" href="#">$US<i class="fas fa-sort-down"></i></a>
+                      <ul class="drop">
+                        <li>$US</li>
+                        <li>EUR</li>
+                        <li>UAH</li>
+  
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-              </nav>
-            </div>
-          </div>
+  
+                <div class="column sm-12 lg-2 nav-bottom">
+                  <ul>
+                    <li><a class="grey" href="/components/404.html"><i class="fas fa-search"></i></a></li>
+                    <li><a class="grey" href="/contact" id="contact" onclick="toggle()"><i
+                          class="far fa-user"></i></a></li>
+                    <li><a class="grey" href="/components/404.html"><i class="far fa-heart"></i></a></li>
+                    <li><a class="grey" href="/components/404.html" id="basket" onclick="toggle()">
+                            <span class="basket-counter"></span>
+                            <i class="fas fa-shopping-bag open-basket-icon"></i>
+                            <i class="fas fa-times close-basket-icon"></i>
+                        </a>
+                    </li>
+                    </ul>
+                    <div class="basket-popup">
+                        <div>You have <span class="basket-counter"></span> items in basket</div>
 
+                        <button class="clear-basket">Clear Basket</button>
+                    </div>
+                </div>
+              </div>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+          </nav>
+        </div>
+      </div>
 
         <!--Product Detail-->
 
@@ -217,9 +231,12 @@
                     </div>
 
                     <div class="purchase-info">
-                        <input type="number" min="0" value="1">
-                        <button type="button" class="btn"> ADD TO CART </button>
-
+                        <div class="quantity-wrapper">
+                            <span class="decrease-number">-</span>
+                            <input type="number" min="1" id="quantity" value="1">
+                            <span class="increase-number">+</span>
+                        </div>
+                        <button type="button" class="btn add-to-cart"> ADD TO CART </button>
                     </div>
 
                     <div class="social-links">
@@ -279,8 +296,8 @@
             </div>
         </div>
 
-        <!--Popular Items-->
-        <div class="row">
+        <!--Featured Items-->
+        <div class="row pdp-featured">
             <div class="column sm-12 md-12 lg-12">
                 <section class="featured">
                     <div class="text-title">
@@ -371,16 +388,68 @@
             </div>
         </div>
 
+        <!--Benefit-->
+    <div class="row">
+        <div class="column sm-12 md-12 lg-12">
+          <div class="benefit">
+            <div class="row">
+              <div class="column sm-12  lg-4">
+                <div class="rows first">
+                  <div class="icon-benefit">
+                    <i class="fas fa-dolly icons-benefit"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h1>FOCUS</h1>
+                    <h2>Our unwavering focus on superior service delivery and building next generatioon competencies</h2>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="column sm-12  lg-4">
+                <div class="rows second ">
+                  <div class="icon-benefit">
+                    <i class="fas fa-recycle"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h1>METHOD</h1>
+                    <h2>A standardized metodology designed to deliver measuable bussines results and predictable costs
+                    </h2>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="column sm-12  lg-4">
+                <div class="rows third">
+                  <div class="icon-benefit">
+                    <i class="fas fa-clipboard-check"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h1>KNOWLEDGE</h1>
+                    <h2>Ahighly skilled , proactive workforce that reliaby improves each cliennt's ROI while mitigating
+                      their
+                      bussines risk</h2>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
         <!--Footer-->
         <div class="row">
-            <footer class="footer stycky-footer">
+            <footer class="footer sticky-footer">
                 <div class="container">
                     <div class="row">
                         <div class="footer-col ">
                             <ul>
-                                <h4><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
+                                <h4 class="footer-copyright"><i class="far fa-copyright">Copyright 2021. All Right Reserved</i></h4>
                                 <li><a href="javascript:void();">
                                         <h4>CONTACT <i class="fas fa-sort-down"></i></h4>
                                     </a>
@@ -449,7 +518,32 @@
         </div>
     </div>
 
-
+     <!--Login-->
+     <div class="login pop" id="blur">
+      <header>Sign in</header>
+      <form action="#" class="login-content">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="Email Address">
+            <i class="icon fas fa-envelope"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">Email can't be blank</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="Password">
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+            <i class="eye" id="visibilityBtn"><span id="icon" class="material-icons"></span></i>
+          </div>
+          <div class="error error-txt">Password can't be blank</div>
+        </div>
+        <div class="pass-txt"><a href="#">Forgot password?</a></div>
+        <input type="submit" class="submit" value="Login">
+      </form>
+      <div class="sign-txt"> <a href="#">I don't have an acount</a></div>
+    </div>
 
     <!--Js  Header-->
     <script src="/js/header.js"></script>
@@ -460,6 +554,11 @@
     <!--Js  Featured-->
     <script src="/js/featured.js"></script>
 
+    <!-- Js Carousel--> 
+    <script src="/js/basket.js"></script>
+
+    <!--Js Login-->
+  <script src="/js/login.js"></script>
 
 
 </body>
