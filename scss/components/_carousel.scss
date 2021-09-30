@@ -1,8 +1,10 @@
+@import "../global/settings";
+
 .top-carusel.row {
   padding-top: 15px;
   width: calc(100% - 30px);
   margin-bottom: 25px;
-  
+
   @include breakpoint("md") {
     padding: 25px 40px;
     width: calc(100% - 80px);
@@ -15,7 +17,6 @@
     background: #1d212b;
     border-radius: 10px;
     width: 100%;
-    // height: calc(100% - 30px);
     height: 60vh;
 
     .slide {
@@ -26,7 +27,7 @@
       clip-path: circle(0% at 0 50%);
 
       &.active {
-        width: 100%;;
+        width: 100%;
         clip-path: circle(150% at 0 50%);
         transition: 1s;
         transition-property: clip-path;
@@ -36,15 +37,15 @@
         text-align: left;
         padding: 0 5px;
         position: absolute;
-        top: 40px;
+        top: 7px;
 
         @include breakpoint("md") {
           padding: 15px 30px;
         }
 
         h2 {
-          font-size: 28px;
-          color: #fff;
+          font-size: 25px;
+          color: $white;
           font-weight: 600;
           letter-spacing: 2px;
 
@@ -54,9 +55,10 @@
             justify-content: center;
           }
         }
+
         p {
           margin-top: 15px;
-          color: #fff;
+          color: $white;
           font-size: 16px;
           width: 60%;
           padding: 10px;
@@ -66,34 +68,32 @@
             margin-top: 50px;
           }
         }
-        .btns {
+
+        .btns a {
           text-align: center;
           display: inline-block;
-          // text-decoration: none;
           border: 2px solid #a2a09e;
           font-size: 14px;
           font-weight: 500;
-          padding: 10px 25px;
+          padding: 10px 15px;
           border-radius: 25px;
           transition: all 0.3s ease;
           width: 150px;
-
-          a{
-            text-decoration: none;
-            color: #fff;
-          }
+          text-decoration: none;
+          color: $white;
         }
       }
+
       img {
         object-fit: cover;
         object-position: right;
         z-index: 1;
         width: 100%;
         height: 60vh;
-        // height: calc(100% - 30px);
         border-radius: 5px;
       }
     }
+
     .navigation {
       z-index: 1;
       position: absolute;
@@ -101,6 +101,7 @@
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
+
       .btn.active {
         background: #2696e9;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -122,9 +123,10 @@
       }
     }
   }
+
   .right-sight {
     margin: 0;
-    background: #fff;
+    background: $white;
     width: 100%;
     height: 100%;
     display: none;
@@ -153,12 +155,14 @@
         color: white;
         margin-top: 35px;
       }
+
       h2 {
         margin-top: 50px;
         font-size: 25px;
         color: white;
       }
     }
+
     .facebook {
       display: flex;
       flex-direction: column;
@@ -172,22 +176,21 @@
         line-height: 7px;
         padding: 15px 15px;
       }
+
       h4 {
         font-size: 13px;
         color: #45413e;
         padding: 15px 25px 20px;
       }
-      .btns {
-        padding: 25px 0;
-        a {
-          text-decoration: none;
-          border: 2px solid #3a5b96;
-          color: #3a5b96;
-          font-size: 14px;
-          border-radius: 25px;
-          transition: all 0.3s ease;
-          padding: 8px 30px;
-        }
+
+      .btns a {
+        text-decoration: none;
+        border: 2px solid #3a5b96;
+        color: #3a5b96;
+        font-size: 14px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        padding: 10px 30px;
       }
     }
   }

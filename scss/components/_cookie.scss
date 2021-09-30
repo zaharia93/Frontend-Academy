@@ -1,3 +1,5 @@
+@import "../global/settings";
+
 .overlay {
   position: absolute;
   display: none;
@@ -19,7 +21,7 @@
   text-align: right;
   display: none;
   position: absolute;
-  background: #fff;
+  background: $white;
   color: #141414;
 
   box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
@@ -56,11 +58,12 @@
 
   .close-btns {
     padding: 0 15px;
-    background: #fff;
+    background: $white;
     border-radius: none;
-    border: #fff;
+    border: $white;
     font-size: 25px;
   }
+
   .cookie-btn {
     padding: 0 15px;
     margin-left: 0;

@@ -1,15 +1,15 @@
-.container-pdp{
+.container-pdp {
   background-color: #f1edea;
 }
 
+@import "../global/settings";
+
 .card-wrapper {
- 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #fff;
- 
+  background-color: $white;
 
   @include breakpoint("md") {
     width: 100%;
@@ -64,12 +64,11 @@
           flex-direction: column;
         }
 
-        
         .img-item {
           margin: 4px;
           width: 100%;
           border: 1px solid #45413e;
-          
+
           &.selected-img {
             border: 1px solid #84bc22;
           }
@@ -79,6 +78,7 @@
           :nth-child(3) {
             margin-right: 0;
           }
+
           &:hover {
             opacity: 0.8;
           }
@@ -101,24 +101,64 @@
           font-size: 3rem;
         }
       }
+
       .product-detail {
         p {
           font-size: 0.9rem;
           padding: 0.3rem;
           opacity: 0.8;
         }
+
         .show-read-more {
           .read-more {
             color: #84bc22;
             text-decoration: none;
           }
+
           .more-text {
             display: none;
           }
         }
       }
+
       .purchase-info {
         margin: 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        .quantity-wrapper {
+          margin: 0;
+          position: relative;
+          user-select: none;
+
+          .decrease-number {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            padding: 5px 14px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 20px;
+
+            &:hover {
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+
+          .increase-number {
+            position: absolute;
+            top: 2px;
+            right: 5px;
+            padding: 5px 14px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 20px;
+
+            &:hover {
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
 
         input,
         .btn {
@@ -131,13 +171,19 @@
           margin-bottom: 1rem;
         }
 
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
         input {
-          width: 60px;
+          width: 70px;
         }
 
         .btn {
           cursor: pointer;
-          color: #fff;
+          color: $white;
 
           &:last-of-type {
             background: #84bc22;
@@ -170,7 +216,7 @@
 
           &:hover {
             color: #24262b;
-            background-color: #ffffff;
+            background-color: $white;
           }
         }
       }
@@ -189,27 +235,30 @@
           font-size: 45px;
         }
       }
+
       h2::after {
         content: "";
         position: absolute;
         margin: auto;
         height: 2px;
         background: #f9f6f5;
-        width: 45%;
+        width: 24%;
         top: 50%;
-        left: 68vh;
+        left: -25%;
       }
+
       h2::before {
         content: "";
         position: absolute;
         margin: auto;
         height: 2px;
         background: #f9f6f5;
-        width: 45%;
+        width: 24%;
         top: 50%;
-        right: 68vh;
+        right: -25%;
       }
     }
+
     .breadcrumbs {
       display: flex;
 
@@ -248,11 +297,63 @@
             }
 
             &.active {
-              color: #45413e;
+              color: #24262b;
+              color: #24262b;
+              color: #b3b3b3;
             }
           }
         }
       }
     }
+  }
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.pdp-featured {
+  padding-top: 30px;
+
+  .featured {
+    background-color: transparent;
+
+    h1 {
+      color: #45413e;
+      margin-bottom: 10px;
+    }
+
+    p,
+    .slide-bar {
+      display: none;
+    }
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .owl-dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    background: #45413e !important;
+    transition: all 0.3s ease;
+  }
+
+  .owl-dot:hover,
+  .owl-dot.active {
+    background-color: transparent !important;
+    border: 3px solid #45413e !important;
+    height: 15px;
+    width: 15px;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    order: 0;
   }
 }

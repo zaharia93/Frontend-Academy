@@ -1,9 +1,15 @@
+@import "../global/settings";
+
 .benefit {
   display: flex;
   flex-wrap: wrap;
   background: #45413e;
-  width: 100%;
+  padding: 20px;
   flex-direction: column;
+
+  @include breakpoint("md") {
+    padding: 60px 35px;
+  }
 
   .rows {
     display: flex;
@@ -11,19 +17,27 @@
     padding: 5px;
 
     .icon-benefit {
-      padding: 55px;
+      padding: 25px;
       color: #84bc22;
       font-size: 50px;
 
       @include breakpoint("md") {
-        padding: 5px;
+        padding: 55px;
+      }
+    }
+
+    .benefit-text {
+      padding: 0 15px;
+
+      @include breakpoint("md") {
+        padding: 0 15px;
       }
     }
 
     h1 {
-      color: #ffff;
+      color: $white;
       font-size: 19px;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
       text-align: center;
     }
 

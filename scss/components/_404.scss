@@ -1,34 +1,13 @@
-// #error-page {
-//   position: absolute;
-//   top: 10%;
-//   left: 5%;
-//   right: 15%;
-//   bottom: 10%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-//   // background: #f2edea;
-//   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-//   z-index: 4;
-//   width: 100%;
-// }
-// #error-page .content {
-//   width: 100%;
-//   text-align: center;
-//   display: flex;
-//   background: white;
-//   border-radius: 10px;
-// }
+@import "../global/settings";
 
-.container-404{
+.container-404 {
   background-color: #f1edea;
 }
 
-.error-page{
-
+.error-page {
   .title {
     position: relative;
+
     h2 {
       font-size: 45px;
       padding: 20px;
@@ -46,21 +25,23 @@
       margin: auto;
       height: 2px;
       background: #f9f6f5;
-      width: 300%;
+      width: 100%;
       top: 50%;
       left: 130px;
     }
+
     h2::before {
       content: "";
       position: absolute;
       margin: auto;
       height: 2px;
       background: #f9f6f5;
-      width: 300%;
+      width: 100%;
       top: 50%;
       right: 130px;
     }
   }
+
   .breadcrumbs {
     display: flex;
 
@@ -106,89 +87,83 @@
     }
   }
 
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include breakpoint("md") {
-    flex-direction: row;
-  }
-
-  .left {
-    background-image: url(/public/exclamation.png);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    justify-content: center;
-
-    h2 {
-      font-size: 70px;
-      position: relative;
-      color: #a1cc55;
-      font-weight: 900;
-      @include breakpoint("md") {
-        font-size: 90px;
-        margin-top: 50%;
-      }
-    }
-  }
-  .right {
-    h4 {
-      font-size: 14px;
-      color: #000;
-      font-size: 22px;
-      position: relative;
-      display: flex;
-      justify-content: left;
-      padding: 10px 0;
-      
-      @include breakpoint("md") {
-        padding: 30px 0;
-      }
+    @include breakpoint("md") {
+      flex-direction: row;
     }
 
-    p {
-      font-size: 17px;
-      color: #555555;
-      display: flex;
-      justify-content: center;
+    .left {
+      background-image: url(/public/exclamation.png);
+      object-fit: cover;
+      background-repeat: no-repeat;
       text-align: center;
+      justify-content: center;
 
-      @include breakpoint("md") {
-        text-align: left;
-        justify-content: left;
+      h2 {
+        font-size: 70px;
+        position: relative;
+        color: #a1cc55;
+        font-weight: 900;
+        @include breakpoint("md") {
+          font-size: 90px;
+          margin-top: 50%;
+        }
       }
     }
-
-    .search-on {
-      // margin: 25px 0;
-
-      a {
+    .right {
+      h4 {
+        font-size: 14px;
+        color: #000;
+        font-size: 22px;
+        position: relative;
         display: flex;
-        text-decoration: none;
-        border: 2px solid #e8e8e8;
-        color: black;
-        width: 50%;
-        padding: 10px 60px;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        justify-content:start;
+        justify-content: left;
+        padding: 10px 0;
+
+        @include breakpoint("md") {
+          padding: 30px 0;
+        }
+      }
+
+      p {
+        font-size: 17px;
+        color: #555555;
+        display: flex;
+        justify-content: center;
         text-align: center;
 
-        
+        @include breakpoint("md") {
+          text-align: left;
+          justify-content: left;
+        }
+      }
+
+      .search-on {
+        a {
+          display: flex;
+          text-decoration: none;
+          border: 2px solid #e8e8e8;
+          color: black;
+          width: 50%;
+          padding: 10px 60px;
+          border-radius: 25px;
+          transition: all 0.3s ease;
+          justify-content: start;
+          text-align: center;
+        }
+      }
+
+      .fis a {
+        display: flex;
+        justify-content: left;
+        text-decoration: none;
+        margin-top: 40px;
+        color: #a1cc55;
       }
     }
-    .fis a {
-      display: flex;
-      justify-content: left;
-      text-decoration: none;
-      margin-top: 40px;
-      color: #a1cc55;
-      
-     
-    }
   }
-}
 }
